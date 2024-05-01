@@ -1,22 +1,24 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-#app {
-    height: 100%;
-}
-
-.center-div {
+/* Organização das divs na página  */
+#center-div-index {
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: pink;
+}
+.div-esquerda {
+    margin-right: 129px;
+    background-color: rgba(165, 42, 42, 0.411);
+}
+.div-direita {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 700px;
+    width: 442px; */
+    background-color: rgba(0, 0, 255, 0.491);
 }
 
+/* Jogando o botão para o outro lado */
 .btn-portal {
     display: flex;
     align-items: end;
@@ -24,69 +26,69 @@ html, body {
     background-color: rgb(0, 255, 38);
 }
 
-#font-login {
+
+
+/* Confugurando os tamanhos dos botões */
+#spans {
+    margin-bottom: 25px;
+}
+#spans-span1 {
     font-size: 40px;
+    font-family: "Inika";
 }
-
-#font-moda-conecta {
+#spans-span2 {
     font-size: 35px;
+    font-family: "Inria Serif";
 }
-
 .div-campos {
-    display: block;
-    width: 100%;
-    /* background-color: azure; */
-}
-
-.div-esquerda {
-    width: 50vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: rgba(165, 42, 42, 0.411); */
+    flex-direction: column;
+}
+#email {
+    margin-bottom: 25px;
+}
+input {
+    width: 442px;
+    height: 49px;
+    border-radius: 5px;
+}
+.link-resetsenha {
+    color: #BC7726;
+    font-size: 18px;
+    font-family: "Inika";
 }
 
-#label-
-
-.div-direita {
+/* botão login para baixo */
+#novaconta {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 255, 0.491);
-    width: 50vw;
 }
-
-.div-senha {
-    margin-bottom: 25px;
-}
-
-input {
-    /* background-color: pink; */
-    width: 440px;
-    height: 66px;
-    margin-bottom: 56px;
-}
-
-label {
-    font-size: 20px;
-    display: flex;
-    justify-content: start;
-}
-
 #btn-login {
-    width: 440px;
-    height: 66px;
-    font-size: 25px;
-    border-radius: 10px;
+    margin-top: 35px;
+    width: 442px;
+    height: 67px;
+    background-color: #AEC5B0;
+    border-radius: 15px;
 }
-
+#letter-btn-login {
+    color: #0F462F;
+    font-size: 25px;
+    font-family: "Inika";
+    text-decoration: none;
+}
+.link-criarconta {
+    text-decoration: none;
+    color: #BC7726;
+    font-size: 14px;
+    font-family: "Inika";
+}
+/* verificar aqui: */
 #btn-google {
     width: 330px;
     height: 55px;
     border-radius: 20px;
 }
-
 #btn-portal {
     border-radius: 10px;
     width: 195px;

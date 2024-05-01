@@ -1,14 +1,13 @@
-#center-div {
+/* Organização das divs na página  */
+#center-div-resetsenha {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5%;
 }
-
 #div-img-resetsenha {
     margin-right: 129px;
 }
-
 #form-login {
     display: flex;
     justify-content: center;
@@ -17,12 +16,12 @@
     width: 442px;
 }
 
-/* confugurando os tamanhos dos botões::after */
-#span1-resetsenha {
+/* Confugurando os tamanhos dos botões */
+#spans-span1 {
     font-size: 40px;
     font-family: "Inika";
 }
-#span2-resetsenha {
+#spans-span2 {
     font-size: 35px;
     font-family: "Inria Serif";
 }
@@ -42,7 +41,7 @@
     background-color: #AEC5B0;
     border-radius: 15px;
 }
-a {
+#form-login a {
     color: #0F462F;
     font-size: 25px;
     font-family: "Inika";

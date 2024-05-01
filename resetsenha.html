@@ -11,24 +11,25 @@
         <div id="app">
             <!-- <p>{{ produto }}</p> -->
             
-            <div id="center-div"> 
+            <div id="center-div-resetsenha"> 
                 <div id="div-img-resetsenha"> <!-- img -->                
                     <img src="img/manequin.svg" alt="Manequin">
                 </div>
             
                 <form id="form-login"> <!-- form -->
 
+                    <!-- criação de 2 spans, pois a flex-direction: column colocou em blocos -->
                     <div id="spans">
-                        <span id = "span1-resetsenha"><b>Portal </b></span>
-                        <span id = "span2-resetsenha"><i>Moda Conecta</i></span>
-                    </div>
+                        <span id = "spans-span1"><b>Portal </b></span>
+                        <span id = "spans-span2"><i>Moda Conecta</i></span>
+                    </div>  
 
                     <p id="p-resetsenha">Informe seu email para recuperação</p>
                     
                     <label for="email"><b>Email</b></label>
                     <input type="email" id="email" placeholder=" user@email.com">
                     
-                    <button id="btn-recuperarsenha"><a href=""><b>Recuperar Senha</b></a></button>
+                    <a href=""><button id="btn-recuperarsenha"><b>Recuperar Senha</b></button></a>
 
                 </form>
             </div>

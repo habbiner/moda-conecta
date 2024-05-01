@@ -8,35 +8,47 @@
         <title>Document</title>
     </head>
     <body>
-       <div id="app">
+        <div id="app">
             <!-- <p>{{ produto }}</p> -->
-            <div class="center-div">
+            <div id="center-div-index">
                 <div class="div-esquerda">
                     <img src="img/login.svg" alt="">
                 </div>
+
                 <div class="div-direita">
                     <div class="btn-portal">
                         <a href=""><button id="btn-portal">Portal</button></a>
                     </div>
-                    <spam><b id="font-login">Login</b> <i id="font-moda-conecta">Moda Conecta</i></spam>
+
                     <form action="">
-                        <div class="div-campos">
-                            <label for="email">Email</label><br>
-                            <input type="email" id="email">
+                        <!-- criação de 2 spans, pois a flex-direction: column colocou em blocos -->
+                        <div id="spans">
+                            <span id = "spans-span1"><b>Login </b></span>
+                            <span id = "spans-span2"><i>Moda Conecta</i></span>
                         </div>
+
+                        <!-- div CAMPOS -->
                         <div class="div-campos">
-                            <label for="senha">Senha</label><br>
-                            <input class="div-senha" type="password" id="senha">
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" id="email" placeholder=" user@email.com">
+                        
+                            <label for="senha"><b>Senha</b></label>
+                            <input type="password" id="senha" placeholder=" ************">
                         </div>
                     </form>
-                    <a href="resetsenha.html"><p>Esqueceu a senha?</p></a>
-                    <a href=""><button id="btn-login"><b>Login</b></button></a>
-                    <a href=""><p>Não tem conta? Crie uma conta</p></a>
-                    <spam>Ou continue com</spam>
-                    <a href=""><button id="btn-google"><i class="fa fa-google" aria-hidden="true"></i> Entrar com Google</button></a>
+                    <a href="resetsenha.html" class="link-resetsenha">Esqueceu a senha?</a>
+
+                    <div id ="novaconta">
+                        <!-- botão verde -->
+                        <a href="" id="letter-btn-login"><button id="btn-login"><b>Login</b></button></a>
+
+                        <a href="" class="link-criarconta">Não tem conta? Criar conta</a>
+
+                        <a href=""><button id="btn-google"><i class="fa fa-google" aria-hidden="true"></i> Entrar com Google</button></a>
+                    </div>
                 </div>
             </div>
-       </div>
+        </div>
         
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="https://kit.fontawesome.com/e5f2843f3a.js" crossorigin="anonymous"></script>
