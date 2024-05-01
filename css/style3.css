@@ -1,0 +1,543 @@
+html, body{
+    margin:0;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: "inter";
+}
+
+/*---------------------------------------------------------------------------------Barra de Navegação----------------------------------------------------------------------------------------------*/
+
+.nav-bar{
+    display: flex;
+    z-index: 3;
+    font-size: 1.2vw;                   /* Div principal que cobre toda a barra*/
+    width: 100%;
+    height: 5vw;
+    border-bottom: 2px solid #aaaaaa; 
+    position: fixed;
+    background-color: white;
+    margin: -8.0% 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.nav-bar-mid{
+    margin: 1.5% 0px 0px 14.5%;
+    justify-content: center;
+    justify-items: center;                  /*Div referente ao Miolo da barra que cobre os <a>*/
+    height: 2vw;
+    width: 63.6vw;
+}
+
+.a-nav-bar-titulo{
+    margin: 0px 4.5% 0px 0px;
+    border: 1px solid #000; 
+    padding: 5px 10px; 
+    text-decoration: none;                  /*<a> "Moda-conecta" com retangulo em volta*/
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1vw
+}
+
+.a-nav-bar{
+    margin: 0px 3.5% 0px 0px;
+    text-decoration: none;                   /*<a> todos os outros redirecionamentos "Novidade" "Outlet" ...*/
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.div-icons-nav-bar{
+    margin: 1.3% 0px 0px -1.23%;
+    width: 9vw;                               /*Div com os icones a direita da barra*/
+    height: 2vw;
+}
+
+.icon-nav-bar{
+    height: 1.5vw;
+    margin: 0px 6% 0px 0px;                     /*Para configurar os icones em si, distancia tamanho etc... */
+    cursor: pointer;
+}
+
+.a-nav-bar-titulo:hover{
+    color:rgb(112, 112, 112) ;                   /* Para deixar o <a> "Moda-conecta" <a> cinza, quando o mouse estiver sobre ele*/
+}
+
+.a-nav-bar:hover{
+    color:rgb(112, 112, 112) ;                  /* Para deixar os  redirecionamentos <a> cinza, quando o mouse estiver sobre eles*/
+}   /* fim da barra */
+
+/*-----------------------------------------------------------------------------Imagem propaganda--------------------------------------------------------------------------------------*/
+
+.img-ad{
+    margin: 8% 0px 0px 14%;
+    width: 70.1vw;                                                             /*Imagem do anuncio principal, abaixo da nav-bar*/
+    height: 22vw ;
+}
+
+/*-----------------------------------------------------------------------------Novas Coleções-------------------------------------------------------------------------------------------*/
+
+.div-h-novas-colecoes{
+    margin: 5.0% 0px 0px 0px;
+    justify-content: center;                                    /*Div com o <h> "NOVAS COLEÇÕES"*/
+    display: flex;
+}
+
+.h-novas-colecoes{
+    font-size: 2.5vw;
+    font-weight: bolder;                                        /*<h> "NOVAS COLEÇOES"*/
+    letter-spacing: 1px;
+    font-family: "Istok Web";
+}
+
+.div-novas-colecoes{
+    margin: 5.0% 0px 0px 0px;
+    display: flex;                                              /*Div os 3 cards*/                                 
+}
+
+
+.img-card-1{
+    margin: 0px 2% 0px 0px;
+    height: 26.5vw;
+    width:  20vw;                                                /*img 1*/
+    cursor: pointer;
+}
+
+.img-card-2{
+    margin: 0px 2% 0px 0px;
+    height: 26.5vw;
+    width: 20vw;                                                  /*img 2*/
+    cursor: pointer;
+}
+
+.img-card-3{
+    margin: 0px 0px 3px 0px;
+    height: 26.5vw;                                                 /*img 3*/
+    width: 20vw;
+    cursor: pointer;
+}
+
+.div-colecoes-card-1{
+    margin: 0px 5.50% 0px 13.8%;                                   /*card 1*/
+}
+
+.div-colecoes-card-2{
+    margin: 0px 5.50% 0px 0%;                                       /*card 2*/
+}
+
+.div-colecoes-card-3{
+    width: 20vw;                                                    /*card 3*/
+}
+
+.h-colecoes-cards{
+    font-weight: bolder; 
+    font-size: 0.91vw; 
+    font-family: 'Inria Serif';                                     /*<h> nome dos produtos */
+    margin: 0px -2px 0px 0px;
+}
+
+/*-----------------------------------------------------------------------------Novas Coleções-------------------------------------------------------------------------------------------*/
+
+.img-guarda-roupa{
+    margin: 2% 0px 0px 14%;
+    width: 70.1vw;
+    height: 25vw ;
+}
+
+.div-h-guarda-roupas{
+    margin: 5.0% 0px 0px 0px;
+    justify-content: center;
+    display: flex;
+}
+
+.h-guarda-roupas{
+    font-size: 2.5vw;
+    font-weight: bold;
+    letter-spacing: 0px;
+    font-family: "Istok Web";
+}
+
+.div-p-guarda-roupas{
+    justify-content: center;
+    display: flex;
+    font-family: "Inria Serif";
+    font-weight: bolder;
+    margin: -1.5% 0px 0px 0px;
+    color: gray;
+}
+
+.div-button-guarda-roupas{
+    justify-content: center;
+    display: flex;
+}
+
+.button-guarda-roupas{
+    background-color: #000;
+    color: white;
+    width: 14vw;
+    height: 3.2vw;
+    border-radius: 2vw;
+    font-family: "Inria Serif";
+    font-size: 1.15vw;
+    font-weight: bold;
+    cursor:pointer;
+    text-decoration: none;
+    border: none;
+}
+.button-guarda-roupas:hover{
+    background-color: #202020;
+}
+
+.div-categorias-card-1{
+    margin: 0px 0.75% 0px 13.8%;                                   /*card 1*/
+}
+
+.div-categorias-card-2{
+    margin: 0px 0.75% 0px 0%;                                       /*card 2*/
+
+}
+
+.div-categorias-card-3{
+    width: 20vw;                                                    /*card 3*/
+}
+
+.img-card-categorias-1{
+    margin: 0px 2% 0px 0px;
+    height: 28.5vw;
+    width:  23vw;                                                /*img 1*/
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgb(173, 173, 173);
+}
+
+.img-card-categorias-2{
+    margin: 0px 2% 0px 0px;
+    height: 28.5vw;
+    width: 23vw;                                                  /*img 2*/
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgb(173, 173, 173);
+}
+
+.img-card-categorias-3{
+    margin: 0px 0px 3px 0px;
+    height: 28.5vw;                                                 /*img 3*/
+    width: 23vw;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgb(173, 173, 173);
+    border-radius: 25px;
+}
+
+.p-na-img{
+    margin: -120% 0% 0px 6%;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5vw;
+    font-family: "Inria Serif";
+    font-weight: 1000;
+}
+
+.button-card-categorias{
+    margin: 95% 0% 0px 6%;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.0vw;
+    font-family: "Inter";
+    font-weight: 1000;
+    border: none;
+    border-radius: 15px;
+    width: 8vw;
+    height: 2.3vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+.button-card-categorias:hover{
+    background-color: #c0c0c0;
+}
+
+.div-h-combos{
+    margin: 5.0% 0px 0px 13.85%;                                   /*Div com o <h> "NOVAS COLEÇÕES"*/
+    display: flex;
+}
+
+.h-combos{
+    font-size: 2.5vw;
+    font-weight: bolder;                                        /*<h> "NOVAS COLEÇOES"*/
+    letter-spacing: 1px;
+    font-family: "Istok Web";
+}
+
+.img-card-combos-1{
+    margin: 0px 2% 0px 0px;
+    height: 19.5vw;
+    width:  19.5vw;                                                /*img 1*/
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgb(173, 173, 173);
+}
+
+.img-card-combos-2{
+    margin: 0px 2% 0px 0px;
+    height: 19.5vw;
+    width: 19.5vw;                                                  /*img 2*/
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgb(173, 173, 173);
+}
+
+.img-card-combos-3{
+    margin: 0px 0px 3px 0px;
+    height: 19.5vw;                                                 /*img 3*/
+    width: 19.5vw;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgb(173, 173, 173);
+    border-radius: 25px;
+}
+
+.div-combos-card-1{
+    margin: 0px 6% 0px 13.8%;                                   /*card 1*/
+}
+
+.div-combos-card-2{
+    margin: 0px 6% 0px 0%;                                       /*card 2*/
+
+}
+
+.div-combos-card-3{
+    width: 20vw;                                                    /*card 3*/
+}
+
+/*-----------------------------------------------------Foooter---------------------------------------------------------------------------*/
+
+.div-footer{
+    display:flex;
+    margin: 13% 0px 7% 0px;
+}
+
+.footer-Moda-conecta-email{
+    margin: 2% 0px 0px 13.81%;
+}
+
+.h-Moda-conecta-footer{
+    font-size: 1.75vw;
+    font-weight: bolder;
+}
+
+.p-Moda-conecta-footer{
+    font-size: 0.85vw;
+    color: #5e5e5e;
+    margin: 0px 0px 10% 0px;
+}
+
+.input-footer{
+    height: 2vw;
+    border-radius: 3vw 0px 0px 3vw;
+    width: 14vw;
+    font-size: 0.85vw;
+    padding: 0px 0px 0px 0px;
+}
+
+.button-footer{
+    border-radius: 0px 3vw 3vw 0px;
+    height: 2.38vw;
+    margin: 0px 0px 0px 3%;
+    font-size: 0.60vw;
+    width: 3.4vw;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: 50;
+}
+
+.div-footer-Listas{
+    display: flex;
+    margin: 6% 0px 0px 20%;
+    width: 35vw;
+    height: 10vw;
+}
+
+.div-footer-Calçados{
+    margin: 0px 7% 0px 0px;
+}
+
+.div-footer-Produtos{
+    margin: 0px 7% 0px 0px;
+}
+
+.div-footer-Categorias{
+    margin: 0px 7% 0px 0px;
+}
+
+.div-footer-Designer{
+    margin: 0px 10px 0px 0px;
+}
+
+.h-footer-listas{
+    font-size: 1.35vw;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.a-footer-listas{
+    font-size: 0.85vw;
+    color:#5e5e5e ;
+    text-decoration: none;
+}
+
+.a-footer-listas:hover{
+    font-size: 0.85vw;
+    color:#939393 ;
+    text-decoration: none;
+}
+
+.margin-h-footer-listas{
+    margin: 0px 0px 8% 0px;
+}
+
+.footer-do-footer{
+    background-color: #181818;
+    width: 100%;
+    height: 5vw;
+    display: flex;
+}
+
+.p1-footer-do-footer{
+    color: white;
+    font-weight: 1000;
+    margin: 2% 30.50% 0px 13.81%;
+    font-size: 0.85vw;
+    font-family: "Libre Baskerville";
+}
+
+.p-footer-do-footer{
+    color: white;
+    margin: 2% 2.5% 0px 0%;
+    font-size: 0.85vw;
+    font-family: "Libre Baskerville";
+    font-weight: bold;
+
+/*-------------------------------------------------------------------Efeito dos cards quando mouse estiver em cima--------------------------------------------------------------------------------*/
+
+}
+.img-card-combos-1:hover{
+    box-shadow: 0px 0px 20px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
+
+.img-card-combos-2:hover{
+    box-shadow: 0px 0px 20px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
+
+.img-card-combos-3:hover{
+    box-shadow: 0px 0px 20px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
+
+.div-categorias-card-1:hover{
+    box-shadow: 0px 0px 20px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    border-radius: 18px;
+}
+
+.div-categorias-card-2:hover{
+    box-shadow: 0px 0px 20px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    border-radius: 18px;
+}
+
+.div-categorias-card-3:hover{
+    box-shadow: 0px 0px 20px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    border-radius: 18px;
+}
+
+.div-colecoes-card-1:hover{
+    box-shadow: 0px 0px 0px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    border-radius: 18px;
+}
+
+
+.div-colecoes-card-2:hover{
+    box-shadow: 0px 0px 0px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    border-radius: 18px;
+}
+
+.div-colecoes-card-3:hover{
+    box-shadow: 0px 0px 0px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    border-radius: 18px;
+}
