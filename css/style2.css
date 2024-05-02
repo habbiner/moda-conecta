@@ -26,10 +26,17 @@
     height: 48px;
     border-radius: 5px;
 }
+#btn-vendedor {
+    width: 196px; /*tamanho diferente */
+    height: 48px; 
+    font-family: "Inter";
+    font-size: 17px;
+    border-radius: 5px;
+}
 
 
 /* Confugurando os tamanhos dos botões */
-#spans {
+.spans {
     margin-top: 30px;
     margin-bottom: 25px;
 }
@@ -37,8 +44,16 @@
     font-size: 40px;
     font-family: "Inika";
 }
+#spans-span1-vendedor {
+    font-size: 35px;
+    font-family: "Inika";
+}
 #spans-span2 {
     font-size: 35px;
+    font-family: "Inria Serif";
+}
+#spans-span2-vendedor {
+    font-size: 30px;
     font-family: "Inria Serif";
 }
 .div-campos {
@@ -88,9 +103,17 @@ input {
     margin-bottom: 18px;
 }
 
-/* botão google; verificar aqui: */
+/* botão google */
 #btn-google {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-family: "Inika";
     width: 330px;
     height: 55px;
     border-radius: 20px;
+}
+#icon-google {
+    border-radius: 25px;
+    margin: 5px 20px 5px 55px;
 }
