@@ -3,33 +3,34 @@
     display: flex;
     justify-content: center;
     margin-top: 5%;
-    background-color: pink;
 }
 .div-esquerda {
     margin-right: 129px;
-    background-color: rgba(165, 42, 42, 0.411);
 }
 .div-direita {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    /* height: 700px;
-    width: 442px; */
-    background-color: rgba(0, 0, 255, 0.491);
+    height: 600px;
+    width: 442px;
 }
 
 /* Jogando o botão para o outro lado */
 .btn-portal {
     display: flex;
-    align-items: end;
-    flex-direction:row;
-    background-color: rgb(0, 255, 38);
+    justify-content: flex-end;
 }
-
+#btn-portal {
+    font-family: "Inter";
+    font-size: 17px;
+    width: 296px;
+    height: 48px;
+    border-radius: 5px;
+}
 
 
 /* Confugurando os tamanhos dos botões */
 #spans {
+    margin-top: 30px;
     margin-bottom: 25px;
 }
 #spans-span1 {
@@ -53,44 +54,43 @@ input {
     border-radius: 5px;
 }
 .link-resetsenha {
-    color: #BC7726;
+    display: flex;
+    justify-content: flex-end;
     font-size: 18px;
+    margin: 25px 0px 25px 0px;
+    color: #BC7726;
     font-family: "Inika";
 }
 
-/* botão login para baixo */
+/* botão login */
+#btn-login {
+    margin-top: 25px;
+    width: 442px;
+    height: 67px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: "Inika";
+    background-color: #AEC5B0;
+    color: #0F462F;}
+
+/* criar conta */
 #novaconta {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-#btn-login {
-    margin-top: 35px;
-    width: 442px;
-    height: 67px;
-    background-color: #AEC5B0;
-    border-radius: 15px;
-}
-#letter-btn-login {
-    color: #0F462F;
-    font-size: 25px;
-    font-family: "Inika";
-    text-decoration: none;
+    align-items: center;
 }
 .link-criarconta {
     text-decoration: none;
     color: #BC7726;
     font-size: 14px;
     font-family: "Inika";
+    margin-top: 25px;
+    margin-bottom: 18px;
 }
-/* verificar aqui: */
+
+/* botão google; verificar aqui: */
 #btn-google {
     width: 330px;
     height: 55px;
     border-radius: 20px;
-}
-#btn-portal {
-    border-radius: 10px;
-    width: 195px;
-    height: 48px;
 }
