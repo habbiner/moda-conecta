@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        
-        <title>Document</title>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');</style>        <title>Document</title>
     </head>
+
     <body>
         <div id="app">
             <!-- <p>{{ produto }}</p> -->
             
-            <div id="center-div"> 
-            <div> <!-- img -->                
-                <img src="img/manequin.svg" alt="Manequin">
-            </div>
+            <div id="center-div-resetsenha"> 
+                <div id="div-img-resetsenha"> <!-- img -->                
+                    <img src="img/manequin.svg" alt="Manequin">
+                </div>
             
-            <form> <!-- form -->
-                <button><a href="">LOGIN</a></button>
-                <span><b>Portal</b> Moda Conecta</span>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email">
-                
-                <label for="semha">Senha</label>
-                <input type="password" id="senha">
-                <a>Esqueceu a senha?</a>
-                
-                <button><a href="">LOGIN</a></button>
+                <form id="form-login"> <!-- form -->
 
-                <button><a href="">Entrar com Google</a></button>
-            </form>
-        </div>
+                    <!-- criação de 2 spans, pois a flex-direction: column colocou em blocos -->
+                    <div id="spans">
+                        <span id = "spans-span1"><b>Portal </b></span>
+                        <span id = "spans-span2"><i>Moda Conecta</i></span>
+                    </div>  
 
+                    <p id="p-resetsenha">Informe seu email para recuperação</p>
+                    
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" id="email" placeholder=" user@email.com">
+                    
+                    <a href=""><button id="btn-recuperarsenha"><b>Recuperar Senha</b></button></a>
+
+                </form>
+            </div>
         </div>
         
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

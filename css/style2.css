@@ -1,94 +1,119 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-#app {
-    height: 100%;
-}
-
-.center-div {
+/* Organização das divs na página  */
+#center-div-index {
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.btn-portal {
-    display: flex;
-    align-items: end;
-    flex-direction:row;
-    background-color: rgb(0, 255, 38);
-}
-
-#font-login {
-    font-size: 40px;
-}
-
-#font-moda-conecta {
-    font-size: 35px;
-}
-
-.div-campos {
-    display: block;
-    width: 100%;
-    /* background-color: azure; */
-}
-
-.div-esquerda {
-    width: 50vw;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    /* background-color: rgba(165, 42, 42, 0.411); */
+    margin-top: 5%;
 }
-
-#label-
-
+.div-esquerda {
+    margin-right: 129px;
+}
 .div-direita {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 255, 0.491);
-    width: 50vw;
+    height: 600px;
+    width: 442px;
 }
 
-.div-senha {
+/* Jogando o botão para o outro lado */
+.btn-portal {
+    display: flex;
+    justify-content: flex-end;
+}
+#btn-portal {
+    font-family: "Inter";
+    font-size: 17px;
+    width: 296px;
+    height: 48px;
+    border-radius: 5px;
+}
+#btn-vendedor {
+    width: 196px; /*tamanho diferente */
+    height: 48px; 
+    font-family: "Inter";
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+
+/* Confugurando os tamanhos dos botões */
+.spans {
+    margin-top: 30px;
     margin-bottom: 25px;
 }
-
-input {
-    /* background-color: pink; */
-    width: 440px;
-    height: 66px;
-    margin-bottom: 56px;
+#spans-span1 {
+    font-size: 40px;
+    font-family: "Inika";
 }
-
-label {
-    font-size: 20px;
+#spans-span1-vendedor {
+    font-size: 35px;
+    font-family: "Inika";
+}
+#spans-span2 {
+    font-size: 35px;
+    font-family: "Inria Serif";
+}
+#spans-span2-vendedor {
+    font-size: 30px;
+    font-family: "Inria Serif";
+}
+.div-campos {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+}
+#email {
+    margin-bottom: 25px;
+}
+input {
+    width: 442px;
+    height: 49px;
+    border-radius: 5px;
+}
+.link-resetsenha {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    margin: 25px 0px 25px 0px;
+    color: #BC7726;
+    font-family: "Inika";
 }
 
+/* botão login */
 #btn-login {
-    width: 440px;
-    height: 66px;
+    margin-top: 25px;
+    width: 442px;
+    height: 67px;
+    border-radius: 15px;
     font-size: 25px;
-    border-radius: 10px;
+    font-family: "Inika";
+    background-color: #AEC5B0;
+    color: #0F462F;}
+
+/* criar conta */
+#novaconta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link-criarconta {
+    text-decoration: none;
+    color: #BC7726;
+    font-size: 14px;
+    font-family: "Inika";
+    margin-top: 25px;
+    margin-bottom: 18px;
 }
 
+/* botão google */
 #btn-google {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-family: "Inika";
     width: 330px;
     height: 55px;
     border-radius: 20px;
 }
-
-#btn-portal {
-    border-radius: 10px;
-    width: 195px;
-    height: 48px;
+#icon-google {
+    border-radius: 25px;
+    margin: 5px 20px 5px 55px;
 }

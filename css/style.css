@@ -1,17 +1,49 @@
-body {
+/* Organização das divs na página  */
+#center-div-resetsenha {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
-.center-div {
+#div-img-resetsenha {
+    margin-right: 129px;
+}
+#form-login {
     display: flex;
     justify-content: center;
-    align-items: center;
-
-}
-
-form {
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 700px;
+    width: 442px;
+}
+
+/* Confugurando os tamanhos dos botões */
+#spans-span1 {
+    font-size: 40px;
+    font-family: "Inika";
+}
+#spans-span2 {
+    font-size: 35px;
+    font-family: "Inria Serif";
+}
+#p-resetsenha {
+    font-size: 30px;
+    font-family: "Inika";
+}
+#email {
+    width: 442px;
+    height: 49px;
+    border-radius: 5px;
+}
+#btn-recuperarsenha {
+    margin-top: 35px;
+    width: 442px;
+    height: 67px;
+    background-color: #AEC5B0;
+    border-radius: 15px;
+}
+#form-login a {
+    color: #0F462F;
+    font-size: 25px;
+    font-family: "Inika";
+    text-decoration: none;
 }
