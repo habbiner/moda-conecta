@@ -28,7 +28,7 @@
                 <img class="icon-nav-bar" src="/img/Lupa.png">
                 <img class="icon-nav-bar" src="/img/Coração.png">          <!--Icones na barra-->
                 <img class="icon-nav-bar" src="/img/omim.png">
-                <img class="icon-nav-bar" src="/img/Sacola.png">
+                <img class="icon-nav-bar" :src="Imgsacola">
                 </div>
                 
             </div> <!--Fim da barra de navegação-->
@@ -36,7 +36,7 @@
 <!-------------------------------------------------------------------------imagem principal-------------------------------------------------------------------------------------------------------->
         <i><div class="div-info-img"> 
         <div class="div-img-info">
-        <img style="border-radius: 25px;" src="/img/Roupa 1.png" width="100%" height="100%"></img.>
+            <img style="border-radius: 25px;" :src="imagemPrincipal" width="100%" height="100%">
         </div>
         <div class="div-info-produto">
         <h class="h-nome-roupa">Calça Feminina Pina</h>
@@ -49,16 +49,18 @@
         <div class="div-info-quantidade">
             <a class="p1-info-produtos-quantidades"> Quantidade <a1>
             <a class="p2-info-produtos-quantidades"> 1</a>
-            <a class="p-info-produtos-quantidades"> P </a>
-            <a class="p-info-produtos-quantidades"> M </a>
-            <a class="p-info-produtos-quantidades"> G </a>
-            <a class="p3-info-produtos-quantidades"> Adicionar a sacola </a>
+            <a class="p-info-produtos-quantidades" v-for="(tamanho, index) in tamanhos" :key="index" 
+            @click="adicionarBorda(index)"
+            :class="{ 'borda-clicada': index === tamanhoSelecionado }">
+            {{ tamanho }}
+            </a>
+            <a class="p3-info-produtos-quantidades" @click="sacolacombolavermeia"> Adicionar a sacola </a>
         </div>
         <div class="div-cores-frete">
             <div class="div-cores">
-            <a class="p-cores-produtos"> Cores: </a>
-            <div class="quadrado-cor"></div>
-            <div class="quadrado-cor2"></div>
+                <a class="p-cores-produtos"> Cores: </a>
+                <div class="quadrado-cor" @click="alterarImagemPrincipal(1); adicionarBorda1(1)" :class="{ 'borda-clicada': corSelecionada === 1 }"></div>
+                <div class="quadrado-cor2" @click="alterarImagemPrincipal(2); adicionarBorda1(2)" :class="{ 'borda-clicada': corSelecionada === 2 }"></div>
             </div>
             <a class="p-frete-info-produtos" > Frete: </a>
             <input class="input-CEP" placeholder="          CEP" type="text" id="caixa-de-texto" name="caixa de texto">
@@ -68,17 +70,22 @@
             <p3> Jadlog R$ 18,99 - chega em 2 dias</p3>
         </div>
         <div class="div-info-desc-tabel"> 
-            <a class="p-info-produtos"> Info </a>
-            <a class="p-decricao-produtos"> descrição </a>
-            <a class="p-tabela-tamanhos-produtos"> Tabela de tamanhos </a>
+            <a @click="alterarComponenteinfo" class="p-info-produtos"> Info </a>
+            <a  @click="alterarPDescricao" class="p-decricao-produtos"> descrição </a>
+            <a @click="alterarPTabelaDeTamanhos" class="p-tabela-tamanhos-produtos"> Tabela de tamanhos </a>
         </div>
         <div class="div-img-tabela-tamanhos">
-            <img src="/img/Tabela de medidas 1.png" width="100%" height="100%">
-        </div>
-        </div>
-        </div>
-        <hr class="hr-prod-info">
 
+        <transition name="fade" mode="out-in">
+            <component :is="componenteAtual"></component>
+        </transition>
+
+        </div>
+        </div>
+        </div>
+<!---------------------------------------------------------------Avaliações--------------------------------------------------------------------------->
+
+        <hr class="hr-prod-info">
         <div>
             <div class="div-move-h-avaliacao">
                 <h class="h-avaliacao">Avaliações</h>
@@ -86,35 +93,35 @@
             <div class="div-cards-avaliacao">
             <div class="div-avaliacao-card1">
                 <div class="div-p-nome-estrela">
-                    <p class="p-nome-avaliacao">nome</p>
+                    <p class="p-nome-avaliacao">Ellen dias</p>
                     <p class="p-5-avaliacao">5.0</p>
                     <div class="img-estrela">
                         <img src="/img/Estrelinha.png" width="100%">
                     </div>
                 </div>
-                <p class="p-sobre-avaliacao">Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                <p class="p-sobre-avaliacao">aquela peça que chama atenção de longe! É tipo uma versão moderna daquele clássico atemporal, sabe? </p>
             </div>
 
             <div class="div-avaliacao-card2">
                 <div class="div-p-nome-estrela">
-                    <p class="p-nome-avaliacao">nome</p>
+                    <p class="p-nome-avaliacao">Habbiner</p>
                     <p class="p-5-avaliacao">5.0</p>
                     <div class="img-estrela">
                         <img src="/img/Estrelinha.png" width="100%">
                     </div>
                 </div>
-                <p class="p-sobre-avaliacao">Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                <p class="p-sobre-avaliacao">Gente, essa calça vermelha Pina é perfeita! Sério, dá pra usar em praticamente qualquer ocasião. </p>
             </div>
 
             <div class="div-avaliacao-card3">
                 <div class="div-p-nome-estrela">
-                    <p class="p-nome-avaliacao">nome</p>
+                    <p class="p-nome-avaliacao">Patricia Dias</p>
                     <p class="p-5-avaliacao">5.0</p>
                     <div class="img-estrela">
                         <img src="/img/Estrelinha.png" width="100%">
                     </div>
                 </div>
-                <p class="p-sobre-avaliacao">Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                <p class="p-sobre-avaliacao">um arraso em forma de roupa! A cor vibrante e o design elegante fazem ela se destacar em qualquer multidão.</p>
             </div>
         </div>
         <hr class="hr-prod-info">
@@ -169,7 +176,7 @@
         </div>
 
     </div>
-<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------Footer----------------------------------------------------------------------------------------------------------------------------->
 <div class="div-footer">
 
     <div class="footer-Moda-conecta-email">
