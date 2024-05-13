@@ -1,346 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-    </style>
-    <link rel="stylesheet" href="FinalizarCompra.css">
-    <script src="index.js"></script>
-    <title>Identificação</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar Compra</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+</style>
+  <link rel="stylesheet" href="FinalizarCompra.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
-
 <body>
-    <div id="app">
-        <header>
-            <div class="nav-bar"> <!--Div Principal-->
 
-                <div class="nav-bar-mid"> <!--Miolo da barra-->
-                    <a class="a-nav-bar-titulo">MODA CONECTA</a>
-                    <a class="a-nav-bar">NOVIDADES</a>
-                    <a class="a-nav-bar">OUTLET</a>
-                    <a class="a-nav-bar">CALÇADOS</a> <!--Diretórios da barra-->
-                    <a class="a-nav-bar">ACESSORIOS</a>
-                    <a class="a-nav-bar">PLUS SIZE</a>
-                </div>
+<div id="app">
+    <header>
+        <div class="nav-bar"> <!--Div Principal-->
 
-                <div class="div-icons-nav-bar"> <!--Div cobrindo os icones.-->
-                    <img class="icon-nav-bar" src="/img/Lupa.png">
-                    <img class="icon-nav-bar" src="/img/Coração.png"> <!--Icones na barra-->
-                    <img class="icon-nav-bar" src="/img/omim.png">
-                    <img class="icon-nav-bar" src="/img/Sacola.png">
-                </div>
-            </div> <!--Fim da barra de navegação-->
-        </header>
-        <main>
-            <div class="icon-caminho">
-                <div class="icon">
-                    <img src="img/sacola.png">
-                    <p>Sacola</p>
-                </div>
-                <div class="loader"></div>
-                <div class="icon">
-                    <img src="img/user.png">
-                    <p>Identificação</p>
-                </div>
-                <div class="loader"></div>
-                <div class="icon">
-                    <img src="img/pagamento.png">
-                    <p>Pagamento</p>
-                </div>
-                <div class="loader"></div>
-                <div class="icon">
-                    <img src="img/verificar.png">
-                    <p>Confirmação</p>
-                </div>
-            </div><!--icon-caminho-->
-            <h1>Finalizar Compra</h1>
-            <div class="top">
-                <div class="dadospessoais">
-                    <h3>DADOS PESSOAIS</h3>
-                    <div class="input">
-                        <div class="input2">
-                            <label class="inputLabel">E-mail *</label>
-                            <input type="email" placeholder="seu@email.com" id="email1">
-                        </div><!--input2-->
-                    </div><!--input-->
-                    <div class="input">
-                        <div class="input2">
-                            <label class="inputLabel">Nome *</label>
-                            <input type="text" placeholder="Nome" class="email">
-                        </div><!--input2-->
-                        <div class="input2">
-                            <label class="inputLabel">Último Nome *</label>
-                            <input type="text" placeholder="Último Nome" class="email">
-                        </div><!--input2-->
-                    </div><!--input-->
-                    <div class="input">
-                        <div class="input2">
-                            <label class="inputLabel">CPF *</label>
-                            <input type="text" placeholder="123.456.789-00" class="email" maxlength="14">
-                        </div><!--input2-->
-                        <div class="input2">
-                            <label class="inputLabel">Telefone *</label>
-                            <input type="tel" placeholder="(00) 91234-5678" class="email" maxlength="15">
-                        </div><!--input2-->
-                    </div><!--input-->
-                    <div class="input">
-                        <div class="input2">
-                            <label class="inputLabel">Data de Nascimento *</label>
-                            <input type="date" placeholder="01/01/2001" class="email">
-                        </div><!--input2-->
-                        <button @click="" class="finalizar">Ir para Entrega</button>
-                    </div><!--input-->
-                </div><!--dadospessoais-->
-                <div class="resumo">
-                    <div class="resumo-conteudo">
-                        <h5>Resumo do Pedido</h5>
-                        <img src="produto.webp">
-                    </div><!--resumo-conteudo-->
-                    <div class="texto">
-                        <h6> CALÇA RETA FEMININA EM VISCOLINHO SUSTENTÁVEL </h6>
-                        <div class="texto1">
-                            <p>Quantidade: 1</p>
-                            <p>139,00 </p>
-                        </div><!--texto1-->
-                        <a href="">Continuar Comprando</a>
-                        <div class="subtotal">
-                            <h6>Subtotal</h6>
-                            <h6>139,00</h6>
-                            <h4>Total</h4>
-                            <h4>139,00</h4>
-                        </div><!--subtotal-->
-                    </div><!--texto-->
-                </div><!--resumo-->
-            </div><!--top-->
-
-            <div class="entrega0">
-                <h2>ENTREGA</h2>
-                <p>Aguardando o preenchimento dos dados</p>
+            <div class="nav-bar-mid"> <!--Miolo da barra-->
+                <a class="a-nav-bar-titulo">MODA CONECTA</a>
+                <a class="a-nav-bar">NOVIDADES</a>
+                <a class="a-nav-bar">OUTLET</a>
+                <a class="a-nav-bar">CALÇADOS</a> <!--Diretórios da barra-->
+                <a class="a-nav-bar">ACESSORIOS</a>
+                <a class="a-nav-bar">PLUS SIZE</a>
             </div>
-            <div class="pagamento0">
-                <h2>PAGAMENTO</h2>
-                <p>Aguardando o preenchimento dos dados</p>
-            </div>
-            <hr>
-            <div class="dadospessoais1">
-                <div class="texto2">
-                    <h4> DADOS PESSOAIS</h4>
-                    <div class="icon-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M22.8531 1.14795C22.1733 0.469151 21.2518 0.0878906 20.2911 0.0878906C19.3304 0.0878906 18.409 0.469151 17.7291 1.14795L1.46514 17.412C0.999388 17.8751 0.630099 18.426 0.378635 19.0327C0.127171 19.6395 -0.00147591 20.2901 0.000137052 20.947V23C0.000137052 23.2652 0.105494 23.5195 0.29303 23.7071C0.480567 23.8946 0.734921 24 1.00014 24H3.05314C3.7099 24.0018 4.36051 23.8734 4.96729 23.6221C5.57408 23.3708 6.12499 23.0016 6.58814 22.536L22.8531 6.27095C23.5316 5.59115 23.9127 4.66992 23.9127 3.70945C23.9127 2.74899 23.5316 1.82776 22.8531 1.14795ZM5.17414 21.122C4.61014 21.6822 3.8481 21.9977 3.05314 22H2.00014V20.947C1.99913 20.5529 2.07629 20.1625 2.22717 19.7984C2.37806 19.4343 2.59965 19.1038 2.87914 18.826L15.2221 6.48295L17.5221 8.78295L5.17414 21.122ZM21.4381 4.85695L18.9321 7.36395L16.6321 5.06895L19.1391 2.56195C19.2902 2.41126 19.4694 2.29179 19.6666 2.21036C19.8638 2.12893 20.0751 2.08714 20.2884 2.08738C20.5017 2.08761 20.713 2.12986 20.91 2.21172C21.107 2.29357 21.2859 2.41343 21.4366 2.56445C21.5873 2.71547 21.7068 2.8947 21.7882 3.09189C21.8697 3.28908 21.9114 3.50038 21.9112 3.71372C21.911 3.92706 21.8687 4.13827 21.7869 4.33529C21.705 4.5323 21.5852 4.71126 21.4341 4.86195L21.4381 4.85695Z"
-                                fill="#0F462F" />
-                        </svg>
-                        <a href=""> Editar dados </a>
-                    </div><!--icon-link-->
-                </div><!--texto2-->
-                <div class="texto3">
-                    <p>seu@email.com</p>
-                    <p>Nome : Fulano Cilando</p>
-                    <p>Telefone: 16 92839-2982</p>
-                </div><!--texto3-->
-            </div><!--dadospessoais1-->  
-            <h3>ENTREGA</h3>
-            <div class="entrega">
-            <h5>Insira seu CEP</h5>
-            <div class="entrega1">
-                <div class="input2">
-                    <label class="inputLabel">CEP *</label>
-                    <input type="text" placeholder="12345-678" class="email" maxlength="9">
-                </div><!--input2-->
-                <button @click="" class="finalizar">Ir para Entrega</button>
-            </div><!--entrega1-->
-            </div><!--entrega-->
-            <div class="entrega2"> 
-                <h5>Insira seu CEP</h5>
-                <div class="entrega1">
-                    <div class="input2">
-                        <label class="inputLabel">CEP *</label>
-                        <input type="text" placeholder="12345-678" class="email" maxlength="9">
-                    </div><!--input2-->
-                </div><!--entrega1-->
-                <div class="endereco">
-                    <p> Rua Beltrando Baltazar 
-                        Jardim Azul - Franca - SP</p>
-                    <a href="" > Alterar</a>
-                </div><!--endereco-->
-                <input type="text" placeholder="Número*" class="numerocomplemento" maxlength="4">
-                <input type="text" placeholder="Complemento" class="numerocomplemento">
-                <h4>Receba em: </h4>
-                <div class="receba">
-                    <input type="checkbox" id="eco" name="eco" value="Economica">
-                        <label for="eco"> Economica </label><br>
-                    <p>em até 4 dias úteis</p>
-                    <p>R$ 5,00</p>
 
-                    <input type="checkbox" id="eco" name="eco" value="Economica">
-                        <label for="eco"> Fast </label><br>
-                    <p>em até 2 dias úteis</p>
-                    <p>R$ 15,00</p>
-                </div><!--receba-->
-                <button @click="" class="finalizar">Ir para o Pagamento</button>
-            </div><!--entrega2-->
-
-            <div class="pagamento0">
-                <h2>PAGAMENTO</h2>
-                <p>Aguardando o preenchimento dos dados</p>
+            <div class="div-icons-nav-bar"> <!--Div cobrindo os icones.-->
+                <img class="icon-nav-bar" src="/img/Lupa.png">
+                <img class="icon-nav-bar" src="/img/Coração.png"> <!--Icones na barra-->
+                <img class="icon-nav-bar" src="/img/omim.png">
+                <img class="icon-nav-bar" src="/img/Sacola.png">
             </div>
-            <hr>
-            <div class="dadospessoais2">
-                <div class="texto2">
-                    <h4> DADOS PESSOAIS</h4>
-                    <div class="icon-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M22.8531 1.14795C22.1733 0.469151 21.2518 0.0878906 20.2911 0.0878906C19.3304 0.0878906 18.409 0.469151 17.7291 1.14795L1.46514 17.412C0.999388 17.8751 0.630099 18.426 0.378635 19.0327C0.127171 19.6395 -0.00147591 20.2901 0.000137052 20.947V23C0.000137052 23.2652 0.105494 23.5195 0.29303 23.7071C0.480567 23.8946 0.734921 24 1.00014 24H3.05314C3.7099 24.0018 4.36051 23.8734 4.96729 23.6221C5.57408 23.3708 6.12499 23.0016 6.58814 22.536L22.8531 6.27095C23.5316 5.59115 23.9127 4.66992 23.9127 3.70945C23.9127 2.74899 23.5316 1.82776 22.8531 1.14795ZM5.17414 21.122C4.61014 21.6822 3.8481 21.9977 3.05314 22H2.00014V20.947C1.99913 20.5529 2.07629 20.1625 2.22717 19.7984C2.37806 19.4343 2.59965 19.1038 2.87914 18.826L15.2221 6.48295L17.5221 8.78295L5.17414 21.122ZM21.4381 4.85695L18.9321 7.36395L16.6321 5.06895L19.1391 2.56195C19.2902 2.41126 19.4694 2.29179 19.6666 2.21036C19.8638 2.12893 20.0751 2.08714 20.2884 2.08738C20.5017 2.08761 20.713 2.12986 20.91 2.21172C21.107 2.29357 21.2859 2.41343 21.4366 2.56445C21.5873 2.71547 21.7068 2.8947 21.7882 3.09189C21.8697 3.28908 21.9114 3.50038 21.9112 3.71372C21.911 3.92706 21.8687 4.13827 21.7869 4.33529C21.705 4.5323 21.5852 4.71126 21.4341 4.86195L21.4381 4.85695Z"
-                                fill="#0F462F" />
-                        </svg>
-                        <a href=""> Editar dados </a>
-                    </div><!--icon-link-->
-                </div><!--texto2-->
-                <div class="texto3">
-                    <p>seu@email.com</p>
-                    <p>Nome : Fulano Cilando</p>
-                    <p>Telefone: 16 92839-2982</p>
-                </div><!--texto3-->
-            </div><!--dadospessoais2-->  
-            <div class="entrega3">
-                <div class="texto2">
-                    <h4> ENTREGA</h4>
-                    <div class="icon-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M22.8531 1.14795C22.1733 0.469151 21.2518 0.0878906 20.2911 0.0878906C19.3304 0.0878906 18.409 0.469151 17.7291 1.14795L1.46514 17.412C0.999388 17.8751 0.630099 18.426 0.378635 19.0327C0.127171 19.6395 -0.00147591 20.2901 0.000137052 20.947V23C0.000137052 23.2652 0.105494 23.5195 0.29303 23.7071C0.480567 23.8946 0.734921 24 1.00014 24H3.05314C3.7099 24.0018 4.36051 23.8734 4.96729 23.6221C5.57408 23.3708 6.12499 23.0016 6.58814 22.536L22.8531 6.27095C23.5316 5.59115 23.9127 4.66992 23.9127 3.70945C23.9127 2.74899 23.5316 1.82776 22.8531 1.14795ZM5.17414 21.122C4.61014 21.6822 3.8481 21.9977 3.05314 22H2.00014V20.947C1.99913 20.5529 2.07629 20.1625 2.22717 19.7984C2.37806 19.4343 2.59965 19.1038 2.87914 18.826L15.2221 6.48295L17.5221 8.78295L5.17414 21.122ZM21.4381 4.85695L18.9321 7.36395L16.6321 5.06895L19.1391 2.56195C19.2902 2.41126 19.4694 2.29179 19.6666 2.21036C19.8638 2.12893 20.0751 2.08714 20.2884 2.08738C20.5017 2.08761 20.713 2.12986 20.91 2.21172C21.107 2.29357 21.2859 2.41343 21.4366 2.56445C21.5873 2.71547 21.7068 2.8947 21.7882 3.09189C21.8697 3.28908 21.9114 3.50038 21.9112 3.71372C21.911 3.92706 21.8687 4.13827 21.7869 4.33529C21.705 4.5323 21.5852 4.71126 21.4341 4.86195L21.4381 4.85695Z"
-                                fill="#0F462F" />
-                        </svg>
-                        <a href=""> Alterar endereço </a>
-                    </div><!--icon-link-->
-                    <p>Entrega 1 de 1</p>
-                </div><!--texto2-->
-                <div class="texto4">
-                    <p>Rua Beltrando Baltazar, nº 1234 
-                        Jardim Azul - Franca - SP</p>
-                    <h6>Economica</h6>
-                    <h6>Em até 4 dias úteis</h6>
-                </div><!--texto4-->
-            </div><!--entrega3-->  
-            <div class="pagamento1">
-                <h2>PAGAMENTO</h2>
-                <p>Escolha a froma de pagamento</p>
-                <button @click="" class="pag">PIX</button>
-                <button @click="" class="pag">CARTÃO DE CRÉDITO</button>
-                <button @click="" class="pag">CARTÃO DE DÉBITO</button>
+        </div> <!--Fim da barra de navegação-->
+    </header>
+    <main>
+        <div class="icon-caminho">
+            <div class="icon">
+                <img src="img/sacola.png">
+                <p>Sacola</p>
+            </div>
+            <div class="loader"></div>
+            <div class="icon">
+                <img src="img/user.png">
+                <p>Identificação</p>
+            </div>
+            <div class="loader"></div>
+            <div class="icon">
+                <img src="img/pagamento.png">
+                <p>Pagamento</p>
+            </div>
+            <div class="loader"></div>
+            <div class="icon">
+                <img src="img/verificar.png">
+                <p>Confirmação</p>
+            </div>
+        </div><!--icon-caminho-->
+        <h1>Finalizar Compra</h1>
+        <div class="top">
+            <div class="resumo">
+                <div class="resumo-conteudo">
+                    <h5>Resumo do Pedido</h5>
+                    <img src="produto.webp">
+                </div><!--resumo-conteudo-->
+                <div class="texto">
+                    <h6> CALÇA RETA FEMININA EM VISCOLINHO SUSTENTÁVEL </h6>
+                    <div class="texto1">
+                        <p>Quantidade: 1</p>
+                        <p>139,00 </p>
+                    </div><!--texto1-->
+                    <a href="">Continuar Comprando</a>
+                    <div class="subtotal">
+                        <h6>Subtotal</h6>
+                        <h6>139,00</h6>
+                        <h4>Total</h4>
+                        <h4>139,00</h4>
+                    </div><!--subtotal-->
+                </div><!--texto-->
+            </div><!--resumo-->
+        
+ 
+  <div v-if="mostrarDiv1">
+    <div id="div1">
+        <div class="dadospessoais">
+            <h3>DADOS PESSOAIS</h3>
             
-            <div class="pix">
-                <img src="pix.png">
-            </div><!--pix-->
-            <div class="catao">
-                <div class="card">
-                    <label class="inputLabel">Numero do Cartão</label>
-                    <input type="text" placeholder="" class="card1">
-                </div><!--card-->
-                <div class="card">
-                    <p>Parcelamentos Disponiveis</p>
-                <form>
-                    <select name="linguagem" required="required">
-                        <option value="">Em quantas parcelas deseja pagar?</option>
-                        <option value="vista">Pagamento á vista - R$ 139,00</option>
-                        <option value="2x">2x de R$ 69,50 sem juros</option>
-                        <option value="3x">3x de R$ 46,33 sem juros</option>
-                        <option value="4x">4x de R$ 34,75 sem juros</option>
-                        <option value="5x">5x de 27,80 sem juros</option>
-                    </select>
-                </form>
+            <div class="input">
+                <div class="input2">
+                    <label class="inputLabel">E-mail *</label>
+                    <input type="email" placeholder="seu@email.com" id="email1">
+                </div><!--input2-->
+            </div><!--input-->
+            <div class="input">
+                <div class="input2">
+                    <label class="inputLabel">Nome *</label>
+                    <input type="text" placeholder="Nome" class="email">
+                </div><!--input2-->
+                <div class="input2">
+                    <label class="inputLabel">Último Nome *</label>
+                    <input type="text" placeholder="Último Nome" class="email">
+                </div><!--input2-->
+            </div><!--input-->
+            <div class="input">
+                <div class="input2">
+                    <label class="inputLabel">CPF *</label>
+                    <input type="text" placeholder="123.456.789-00" class="email" maxlength="14">
+                </div><!--input2-->
+                <div class="input2">
+                    <label class="inputLabel">Telefone *</label>
+                    <input type="tel" placeholder="(00) 91234-5678" class="email" maxlength="15">
+                </div><!--input2-->
+            </div><!--input-->
+            <div class="input">
+                <div class="input2">
+                    <label class="inputLabel">Data de Nascimento *</label>
+                    <input type="date" placeholder="01/01/2001" class="email">
+                </div><!--input2-->
+            </div><!--input--> 
+            <button @click="trocarDiv" class="finalizar">Ir para Entrega</button>
+        </div><!--div1-->
+        </div><!--dadospessoais-->
+  </div>
+  <div v-if="!mostrarDiv1">
+    <div id="div2">
+        <div class="dadospessoais1">
+            <div class="texto2">
+                <h4> DADOS PESSOAIS</h4>
+                <div class="icon-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.8531 1.14795C22.1733 0.469151 21.2518 0.0878906 20.2911 0.0878906C19.3304 0.0878906 18.409 0.469151 17.7291 1.14795L1.46514 17.412C0.999388 17.8751 0.630099 18.426 0.378635 19.0327C0.127171 19.6395 -0.00147591 20.2901 0.000137052 20.947V23C0.000137052 23.2652 0.105494 23.5195 0.29303 23.7071C0.480567 23.8946 0.734921 24 1.00014 24H3.05314C3.7099 24.0018 4.36051 23.8734 4.96729 23.6221C5.57408 23.3708 6.12499 23.0016 6.58814 22.536L22.8531 6.27095C23.5316 5.59115 23.9127 4.66992 23.9127 3.70945C23.9127 2.74899 23.5316 1.82776 22.8531 1.14795ZM5.17414 21.122C4.61014 21.6822 3.8481 21.9977 3.05314 22H2.00014V20.947C1.99913 20.5529 2.07629 20.1625 2.22717 19.7984C2.37806 19.4343 2.59965 19.1038 2.87914 18.826L15.2221 6.48295L17.5221 8.78295L5.17414 21.122ZM21.4381 4.85695L18.9321 7.36395L16.6321 5.06895L19.1391 2.56195C19.2902 2.41126 19.4694 2.29179 19.6666 2.21036C19.8638 2.12893 20.0751 2.08714 20.2884 2.08738C20.5017 2.08761 20.713 2.12986 20.91 2.21172C21.107 2.29357 21.2859 2.41343 21.4366 2.56445C21.5873 2.71547 21.7068 2.8947 21.7882 3.09189C21.8697 3.28908 21.9114 3.50038 21.9112 3.71372C21.911 3.92706 21.8687 4.13827 21.7869 4.33529C21.705 4.5323 21.5852 4.71126 21.4341 4.86195L21.4381 4.85695Z"
+                            fill="#0F462F" />
+                    </svg>
+                    <a href=""> Editar dados </a>
+                </div><!--icon-link-->
+            </div><!--texto2-->
+            <div class="texto3">
+                <p>seu@email.com</p>
+                <p>Nome : Fulano Cilando</p>
+                <p>Telefone: 16 92839-2982</p>
+            </div><!--texto3-->
+        </div><!--dadospessoais1-->
+    </div><!--div2-->
+</div></div><!--top-->
+<div v-if="mostrarDiv3">
+<div id="div3">
+    <div class="entrega0">
+        <h2>ENTREGA</h2>
+        <p>Aguardando o preenchimento dos dados</p>
+    </div><!--entrega0-->
+</div>
+</div>
+
+<div v-if="mostrarDiv4">
+    <div id="div4" class="escondido">
+        <h3>ENTREGA</h3>
+        <div class="entrega">
+        <h5>Insira seu CEP</h5>
+        <div class="entrega1">
+            <div class="input2">
+                <label class="inputLabel">CEP *</label>
+                <input type="text" placeholder="12345-678" class="email" maxlength="9">
+            </div><!--input2-->
+            <button @click="trocarDivs1()" id="finalizar">Ir para Entrega</button>
+        </div><!--entrega1-->
+        </div><!--entrega-->
+  </div>
+</div>
+<div v-if="!mostrarDiv5">
+    <div id="div5" class="escondido"><h3>ENTREGA</h3>
+    <div class="entrega2"> 
+        <h5>Insira seu CEP</h5>
+        <div class="entrega1">
+            <div class="input2">
+                <label class="inputLabel">CEP *</label>
+                <input type="text" placeholder="12345-678" class="email" maxlength="9">
+            </div><!--input2-->
+        </div><!--entrega1-->
+        <div class="endereco">
+            <p> Rua Beltrando Baltazar 
+                Jardim Azul - Franca - SP</p>
+            <a href="" > Alterar</a>
+        </div><!--endereco-->
+        <input type="text" placeholder="Número*" class="numerocomplemento" maxlength="4">
+        <input type="text" placeholder="Complemento" class="numerocomplemento">
+        <h4>Receba em: </h4>
+        <div class="receba">
+            <input type="checkbox" id="eco" name="eco" value="Economica">
+                <label for="eco"> Economica </label><br>
+            <p>em até 4 dias úteis</p>
+            <p>R$ 5,00</p>
+
+            <input type="checkbox" id="eco" name="eco" value="Economica">
+                <label for="eco"> Fast </label><br>
+            <p>em até 2 dias úteis</p>
+            <p>R$ 15,00</p>
+        </div><!--receba-->
+        <button @click="trocarDivs2()" class="finalizar">Ir para o Pagamento</button>
+    </div><!--entrega2-->
+</div><!--div5--></div>
+<div v-if="!mostrarDiv6">
+    <div id="div6" class="escondido">
+    <div class="entrega3">
+        <div class="texto2">
+            <h4> ENTREGA</h4>
+            <div class="icon-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M22.8531 1.14795C22.1733 0.469151 21.2518 0.0878906 20.2911 0.0878906C19.3304 0.0878906 18.409 0.469151 17.7291 1.14795L1.46514 17.412C0.999388 17.8751 0.630099 18.426 0.378635 19.0327C0.127171 19.6395 -0.00147591 20.2901 0.000137052 20.947V23C0.000137052 23.2652 0.105494 23.5195 0.29303 23.7071C0.480567 23.8946 0.734921 24 1.00014 24H3.05314C3.7099 24.0018 4.36051 23.8734 4.96729 23.6221C5.57408 23.3708 6.12499 23.0016 6.58814 22.536L22.8531 6.27095C23.5316 5.59115 23.9127 4.66992 23.9127 3.70945C23.9127 2.74899 23.5316 1.82776 22.8531 1.14795ZM5.17414 21.122C4.61014 21.6822 3.8481 21.9977 3.05314 22H2.00014V20.947C1.99913 20.5529 2.07629 20.1625 2.22717 19.7984C2.37806 19.4343 2.59965 19.1038 2.87914 18.826L15.2221 6.48295L17.5221 8.78295L5.17414 21.122ZM21.4381 4.85695L18.9321 7.36395L16.6321 5.06895L19.1391 2.56195C19.2902 2.41126 19.4694 2.29179 19.6666 2.21036C19.8638 2.12893 20.0751 2.08714 20.2884 2.08738C20.5017 2.08761 20.713 2.12986 20.91 2.21172C21.107 2.29357 21.2859 2.41343 21.4366 2.56445C21.5873 2.71547 21.7068 2.8947 21.7882 3.09189C21.8697 3.28908 21.9114 3.50038 21.9112 3.71372C21.911 3.92706 21.8687 4.13827 21.7869 4.33529C21.705 4.5323 21.5852 4.71126 21.4341 4.86195L21.4381 4.85695Z"
+                        fill="#0F462F" />
+                </svg>
+                <a href=""> Alterar endereço </a>
+            </div><!--icon-link-->
+            <p>Entrega 1 de 1</p>
+        </div><!--texto2-->
+        <div class="texto4">
+            <p>Rua Beltrando Baltazar, nº 1234 
+                Jardim Azul - Franca - SP</p>
+            <h6>Economica</h6>
+            <h6>Em até 4 dias úteis</h6>
+        </div><!--texto4-->
+    </div><!--entrega3-->  </div><!--div6--></div><div v-if="mostrarDiv7">
+<div id="div7">
+    <div class="pagamento0">
+        <h2>PAGAMENTO</h2>
+        <p>Aguardando o preenchimento dos dados</p>
+    </div>
+</div></div>
+    <div v-if="!mostrarDiv7">
+    <div id="div8">
+        
+        <div class="pagamento1">
+            <h2>PAGAMENTO</h2>
+            <p>Escolha a froma de pagamento</p>
+            <button @click="toggleMostrarInformacoesPagamento('pix')" class="pag">PIX</button>
+            <button @click="toggleMostrarInformacoesPagamento('credito')" class="pag">CARTÃO DE CRÉDITO</button>
+            <button @click="toggleMostrarInformacoesPagamento('debito')" class="pag">CARTÃO DE DÉBITO</button>
+        
+                <div v-if="mostrarPix" class="pix">
+                    <img src="pix.png">
+                </div><!--pix-->
+                <div v-if="mostrarCartaoCredito" class="cartao-credito">
+            <div class="card">
+                <label class="inputLabel">Numero do Cartão</label>
+                <input type="text" placeholder="" class="card1">
             </div><!--card-->
-                <div class="card">
-                    <label class="inputLabel">Nome impresso no cartão</label>
-                    <input type="text" placeholder="" class="card1">
-                </div><!--card-->
-                <form>
-                <p>Data de Validade</p>
-                <p>Mês</p>
-                <select id="parcelas">
-                    <label>Mês</label>
-                    <option value="vista">Mês</option>
-                    <option value="1">1</option>
-                    <option value="1">2</option>
-                    <option value="1">3</option>
-                    <option value="1">4</option>
-                    <option value="1">5</option>
-                    <option value="1">6</option>
-                    <option value="1">7</option>
-                    <option value="1">8</option>
-                    <option value="1">9</option>
-                    <option value="1">10</option>
-                    <option value="1">11</option>
-                    <option value="1">12</option>
-                </select>
-            </form>
-            <p>Ano</p>
+            <div class="card">
+                <p>Parcelamentos Disponiveis</p>
             <form>
-                <select id="parcelas">
-                    <label>Ano</label>
-                    <option value="vista">Ano</option>
-                    <option value="1">24</option>
-                    <option value="1">25</option>
-                    <option value="1">26</option>
-                    <option value="1">27</option>
-                    <option value="1">28</option>
-                    <option value="1">29</option>
-                    <option value="1">30</option>
-                    <option value="1">31</option>
-                    <option value="1">32</option>
-                    <option value="1">33</option>
-                    <option value="1">34</option>
-                    <option value="1">35</option>
-                    <option value="1">36</option>
-                    <option value="1">37</option>
-                    <option value="1">38</option>
-                    <option value="1">39</option>
-                    <option value="1">40</option>
-                    <option value="1">41</option>
-                    <option value="1">42</option>
-                    <option value="1">43</option>
-                    <option value="1">44</option>
-                    <option value="1">45</option>
-                    <option value="1">46</option>
-                    <option value="1">47</option>
-                    <option value="1">48</option>
-                    <option value="1">49</option>
-                    <option value="1">50</option>
-                    <option value="1">51</option>
-                    <option value="1">52</option>
-                    <option value="1">53</option>
-                    <option value="1">54</option>
-                    <option value="1">55</option>
-                    <option value="1">56</option>
-                    <option value="1">57</option>
-                    <option value="1">58</option>
-                    <option value="1">59</option>
-                    <option value="1">60</option>
+                <select name="linguagem" required="required">
+                    <option value="">Em quantas parcelas deseja pagar?</option>
+                    <option value="vista">Pagamento á vista - R$ 139,00</option>
+                    <option value="2x">2x de R$ 69,50 sem juros</option>
+                    <option value="3x">3x de R$ 46,33 sem juros</option>
+                    <option value="4x">4x de R$ 34,75 sem juros</option>
+                    <option value="5x">5x de 27,80 sem juros</option>
                 </select>
             </form>
+        </div><!--card-->
             <div class="card">
-                <label class="inputLabel">CVV*</label>
-                <input type="text" placeholder="" class="card1" maxlength="3">
+                <label class="inputLabel">Nome impresso no cartão</label>
+                <input type="text" placeholder="" class="card1">
+            </div><!--card-->
+            <form>
+            <p>Data de Validade</p>
+            <p>Mês</p>
+            <select id="parcelas">
+                <label>Mês</label>
+                <option value="vista">Mês</option>
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+                <option value="1">6</option>
+                <option value="1">7</option>
+                <option value="1">8</option>
+                <option value="1">9</option>
+                <option value="1">10</option>
+                <option value="1">11</option>
+                <option value="1">12</option>
+            </select>
+        </form>
+        <p>Ano</p>
+        <form>
+            <select id="parcelas">
+                <label>Ano</label>
+                <option value="vista">Ano</option>
+                <option value="1">24</option>
+                <option value="1">25</option>
+                <option value="1">26</option>
+                <option value="1">27</option>
+                <option value="1">28</option>
+                <option value="1">29</option>
+                <option value="1">30</option>
+                <option value="1">31</option>
+                <option value="1">32</option>
+                <option value="1">33</option>
+                <option value="1">34</option>
+                <option value="1">35</option>
+                <option value="1">36</option>
+                <option value="1">37</option>
+                <option value="1">38</option>
+                <option value="1">39</option>
+                <option value="1">40</option>
+                <option value="1">41</option>
+                <option value="1">42</option>
+                <option value="1">43</option>
+                <option value="1">44</option>
+                <option value="1">45</option>
+                <option value="1">46</option>
+                <option value="1">47</option>
+                <option value="1">48</option>
+                <option value="1">49</option>
+                <option value="1">50</option>
+                <option value="1">51</option>
+                <option value="1">52</option>
+                <option value="1">53</option>
+                <option value="1">54</option>
+                <option value="1">55</option>
+                <option value="1">56</option>
+                <option value="1">57</option>
+                <option value="1">58</option>
+                <option value="1">59</option>
+                <option value="1">60</option>
+            </select>
+        </form>
+        <div class="card">
+            <label class="inputLabel">CVV*</label>
+            <input type="text" placeholder="" class="card1" maxlength="3">
+        </div><!--card-->
+        <div class="card">
+            <label class="inputLabel">CPF do titular*</label>
+            <input type="text" placeholder="123.456.789-00" class="card1" maxlength="15">
+        </div><!--card-->
+        </div><!--cartao-->
+        <div v-if="mostrarCartaoDebito" class="cartao-debito">
+            <div class="card">
+                <label class="inputLabel">Numero do Cartão</label>
+                <input type="text" placeholder="" class="card1">
             </div><!--card-->
             <div class="card">
-                <label class="inputLabel">CPF do titular*</label>
-                <input type="text" placeholder="123.456.789-00" class="card1" maxlength="15">
+                <label class="inputLabel">Nome impresso no cartão</label>
+                <input type="text" placeholder="" class="card1">
             </div><!--card-->
-            </div><!--cartao-->
-        </div><!--pagamento1-->
-        </main>
-    </div><!--app-->
-    <hr>
-    <footer>
-        <p>pagamento</p>
-        <img src="img/cartao.png">
-    </footer>
+            <form>
+            <p>Data de Validade</p>
+            <p>Mês</p>
+            <select id="parcelas">
+                <label>Mês</label>
+                <option value="vista">Mês</option>
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+                <option value="1">6</option>
+                <option value="1">7</option>
+                <option value="1">8</option>
+                <option value="1">9</option>
+                <option value="1">10</option>
+                <option value="1">11</option>
+                <option value="1">12</option>
+            </select>
+        </form>
+        <p>Ano</p>
+        <form>
+            <select id="parcelas">
+                <label>Ano</label>
+                <option value="vista">Ano</option>
+                <option value="1">24</option>
+                <option value="1">25</option>
+                <option value="1">26</option>
+                <option value="1">27</option>
+                <option value="1">28</option>
+                <option value="1">29</option>
+                <option value="1">30</option>
+                <option value="1">31</option>
+                <option value="1">32</option>
+                <option value="1">33</option>
+                <option value="1">34</option>
+                <option value="1">35</option>
+                <option value="1">36</option>
+                <option value="1">37</option>
+                <option value="1">38</option>
+                <option value="1">39</option>
+                <option value="1">40</option>
+                <option value="1">41</option>
+                <option value="1">42</option>
+                <option value="1">43</option>
+                <option value="1">44</option>
+                <option value="1">45</option>
+                <option value="1">46</option>
+                <option value="1">47</option>
+                <option value="1">48</option>
+                <option value="1">49</option>
+                <option value="1">50</option>
+                <option value="1">51</option>
+                <option value="1">52</option>
+                <option value="1">53</option>
+                <option value="1">54</option>
+                <option value="1">55</option>
+                <option value="1">56</option>
+                <option value="1">57</option>
+                <option value="1">58</option>
+                <option value="1">59</option>
+                <option value="1">60</option>
+            </select>
+        </form>
+        <div class="card">
+            <label class="inputLabel">CVV*</label>
+            <input type="text" placeholder="" class="card1" maxlength="3">
+        </div><!--card-->
+        <div class="card">
+            <label class="inputLabel">CPF do titular*</label>
+            <input type="text" placeholder="123.456.789-00" class="card1" maxlength="15">
+        </div>
+    </div><!--pagamento1--></div><!--div8--></div></div> 
+</main>
+<footer>
+    <p>pagamento</p>
+    <img src="img/cartao.png">
+</footer>
+</div><!--app-->
+
+
+<script src="index.js">
+</script>
+
 </body>
-
 </html>
-

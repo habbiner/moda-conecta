@@ -127,6 +127,8 @@ body {
 .top {
     display: flex;
     gap: 30px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 /*Dados Pessoais*/
@@ -196,8 +198,20 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-left: 375px;
 }
-
+#finalizar {
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: rgb(181, 181, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .finalizar:hover {
     background-color: rgb(88, 255, 255);
     cursor: pointer;
@@ -418,6 +432,7 @@ p {
     /* Adiciona um espaçamento interno */
     width: 660px;
     margin-bottom: 10px;
+    margin-bottom: 200px;
 }
 .texto2 p {
     text-align: center;
@@ -429,6 +444,7 @@ p {
     gap: 10px;
     justify-items: center;
     margin-top: 10px;
+    margin-bottom: 100px;
 }
 
 .texto4 p {
@@ -528,4 +544,16 @@ select::-webkit-inner-spin-button,
 select::-webkit-outer-spin-button {
     -webkit-appearance: none; /* Remove a aparência padrão do Webkit */
     margin: 0; /* Remove o espaço entre as setas */
+}
+.hidden {
+    display: none;
+}
+/*Fim da Entrega e Subtotal */
+footer {
+    display: flex;
+}
+
+footer img {
+    width: 350px;
+    height: 50px;
 }
