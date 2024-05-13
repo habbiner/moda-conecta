@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="" href="/img/Logo.png">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');</style>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');</style>
+        <title>Moda Conecta - Home</title>
+    </head>
+    <body>
+        <div id="app">
+            <!-------------------------------------------------------------------------Barra de Navegação-------------------------------------------------------------------------------------------------------->
+            
+        <div class="nav-bar"> <!--Div Principal-->
+
+                <div class="nav-bar-mid"> <!--Miolo da barra-->
+                <a class="a-nav-bar-titulo">MODA CONECTA</a>
+                <a href="#NOVIDADES" class="a-nav-bar">NOVIDADES</a>
+                <a class="a-nav-bar">OUTLET</a>                               
+                <a class="a-nav-bar">CALÇADOS</a>                             <!--Diretórios da barra-->
+                <a class="a-nav-bar">ACESSORIOS</a>
+                <a class="a-nav-bar">PLUS SIZE</a>
+                </div>
+
+                <div class="div-icons-nav-bar"> <!--Div cobrindo os icones.-->
+                <img class="icon-nav-bar" src="/img/Lupa.png">
+                <img class="icon-nav-bar" src="/img/Coração.png">          <!--Icones na barra-->
+                <img class="icon-nav-bar" src="/img/omim.png">
+                <img class="icon-nav-bar" :src="Imgsacola">
+                </div>
+                
+            </div> <!--Fim da barra de navegação-->
+
+<!-------------------------------------------------------------------------imagem principal-------------------------------------------------------------------------------------------------------->
+        <i><div class="div-info-img"> 
+        <div class="div-img-info">
+            <img style="border-radius: 25px;" :src="imagemPrincipal" width="100%" height="100%">
+        </div>
+        <div class="div-info-produto">
+        <h class="h-nome-roupa">Calça Feminina Pina</h>
+        <div class="div-preco-img">
+        <p class="p-precos-info-produtos"> R$ 124,99</p>
+        <p  style="color: gray;"class="p-precos-info-produtos"><s> R$ 134,99 </s></p>
+        </div>
+        <p class="p-info-sobre-produtos">  pode ser tanto uma escolha elegante para um evento especial 
+            quanto uma adição divertida ao seu estilo casual do dia a dia.</p>
+        <div class="div-info-quantidade">
+            <a class="p1-info-produtos-quantidades"> Quantidade <a1>
+            <a class="p2-info-produtos-quantidades"> 1</a>
+            <a class="p-info-produtos-quantidades" v-for="(tamanho, index) in tamanhos" :key="index" 
+            @click="adicionarBorda(index)"
+            :class="{ 'borda-clicada': index === tamanhoSelecionado }">
+            {{ tamanho }}
+            </a>
+            <a class="p3-info-produtos-quantidades" @click="sacolacombolavermeia"> Adicionar a sacola </a>
+        </div>
+        <div class="div-cores-frete">
+            <div class="div-cores">
+                <a class="p-cores-produtos"> Cores: </a>
+                <div class="quadrado-cor" @click="alterarImagemPrincipal(1); adicionarBorda1(1)" :class="{ 'borda-clicada': corSelecionada === 1 }"></div>
+                <div class="quadrado-cor2" @click="alterarImagemPrincipal(2); adicionarBorda1(2)" :class="{ 'borda-clicada': corSelecionada === 2 }"></div>
+            </div>
+            <a class="p-frete-info-produtos" > Frete: </a>
+            <input class="input-CEP" placeholder="          CEP" type="text" id="caixa-de-texto" name="caixa de texto">
+        </div>
+        <div class="div-Sedex-Jadlog">
+            <p3 class="p3-frete-info-barra"> Sedex: R$ 14.23 - chega em 5 dias</p3><br>
+            <p3> Jadlog R$ 18,99 - chega em 2 dias</p3>
+        </div>
+        <div class="div-info-desc-tabel"> 
+            <a @click="alterarComponenteinfo" class="p-info-produtos"> Info </a>
+            <a  @click="alterarPDescricao" class="p-decricao-produtos"> descrição </a>
+            <a @click="alterarPTabelaDeTamanhos" class="p-tabela-tamanhos-produtos"> Tabela de tamanhos </a>
+        </div>
+        <div class="div-img-tabela-tamanhos">
+
+        <transition name="fade" mode="out-in">
+            <component :is="componenteAtual"></component>
+        </transition>
+
+        </div>
+        </div>
+        </div>
+<!---------------------------------------------------------------Avaliações--------------------------------------------------------------------------->
+
+        <hr class="hr-prod-info">
+        <div>
+            <div class="div-move-h-avaliacao">
+                <h class="h-avaliacao">Avaliações</h>
+            </div>
+            <div class="div-cards-avaliacao">
+            <div class="div-avaliacao-card1">
+                <div class="div-p-nome-estrela">
+                    <p class="p-nome-avaliacao">Ellen dias</p>
+                    <p class="p-5-avaliacao">5.0</p>
+                    <div class="img-estrela">
+                        <img src="/img/Estrelinha.png" width="100%">
+                    </div>
+                </div>
+                <p class="p-sobre-avaliacao">aquela peça que chama atenção de longe! É tipo uma versão moderna daquele clássico atemporal, sabe? </p>
+            </div>
+
+            <div class="div-avaliacao-card2">
+                <div class="div-p-nome-estrela">
+                    <p class="p-nome-avaliacao">Habbiner</p>
+                    <p class="p-5-avaliacao">5.0</p>
+                    <div class="img-estrela">
+                        <img src="/img/Estrelinha.png" width="100%">
+                    </div>
+                </div>
+                <p class="p-sobre-avaliacao">Gente, essa calça vermelha Pina é perfeita! Sério, dá pra usar em praticamente qualquer ocasião. </p>
+            </div>
+
+            <div class="div-avaliacao-card3">
+                <div class="div-p-nome-estrela">
+                    <p class="p-nome-avaliacao">Patricia Dias</p>
+                    <p class="p-5-avaliacao">5.0</p>
+                    <div class="img-estrela">
+                        <img src="/img/Estrelinha.png" width="100%">
+                    </div>
+                </div>
+                <p class="p-sobre-avaliacao">um arraso em forma de roupa! A cor vibrante e o design elegante fazem ela se destacar em qualquer multidão.</p>
+            </div>
+        </div>
+        <hr class="hr-prod-info">
+    </div></i>
+<!-----------------------------------------------------------------------------------------------------Produtos relacionados---------------------------------------------------------------------------->
+<div id="NOVIDADES" class="div-h-relacionados"> <!--Div titulo Novas Coleções-->
+    <h class="h-avaliacao">PRODUTOS RELACIONADOS</h>
+    </div>
+
+    <div class="div-novas-colecoes"> <!--Div cobrindo todos os cards-->
+
+        <div class="div-colecoes-card-1">  <!---------------------Div card 1------------------------>
+
+            <div class="img-card-1">
+                <a href="#">
+                    <img style="border-radius: 20px;" src="img/Roupa 1.png" width="100%" height="100%">
+                </a>
+            </div>
+
+            <h class="h-colecoes-cards">CALÇA FEMININA PINA</h><br>
+            <p2 style="font-weight: bolder; font-size: 0.60vw; color: gray;">Slim fit vermelha canelado</p2><br>
+            <p1 style="font-weight: bold; font-size: 0.80vw;">R$ 239,00</p1>
+
+        </div>
+
+        <div class="div-colecoes-card-2">  <!---------------------Div card 2------------------------>
+
+            <div class="img-card-2">
+                <a href="#">
+                    <img style="border-radius: 20px;" src="/img/Roupa 2.png" width="100%" height="100%">
+                </a>
+            </div >
+
+            <h class="h-colecoes-cards">REGATA FEMININA BUSTO</h><br>
+            <p2 style="font-weight: bolder; font-size: 0.60vw; color: gray;">Slim fit preto canelado</p2><br>
+            <p1 style="font-weight: bold; font-size: 0.80vw;">R$ 84,00</p1>
+
+        </div>
+
+        <div class="div-colecoes-card-3"> <!---------------------Div card 3------------------------>
+
+            <div class="img-card-3">
+                <a href="#">
+                <img style="border-radius: 20px;" src="img/Roupa 3.png" width="100%" height="100%">
+                </a>
+            </div>
+
+            <h class="h-colecoes-cards">CAMISA FEMININA OFF-WHITE</h><br>
+            <p2 style="font-weight: bolder; font-size: 0.60vw; color: gray;">Slim fit branco canelado</p2><br>
+            <p1 style="font-weight: bold; font-size: 0.80vw;">R$ 149,00</p1>
+
+        </div>
+
+    </div>
+<!------------------------------------------------------------------Footer----------------------------------------------------------------------------------------------------------------------------->
+<div class="div-footer">
+
+    <div class="footer-Moda-conecta-email">
+        <h class="h-Moda-conecta-footer"> MODA <br>CONECTA</h>
+        <p class="p-Moda-conecta-footer"> Receba nossas ofertas e novidades por email.<br> Cadastre-se agora mesmo!</p>
+            <input class="input-footer" placeholder="  Digite seu Email:" type="text" id="caixa-de-texto" name="caixa de texto">
+            <button class="button-footer"> Enviar </button>
+        
+    </div>
+
+        <div class="div-footer-Listas">
+
+        
+            <div class="div-footer-Calçados">
+                <div class="margin-h-footer-listas">
+                <h class="h-footer-listas">Calçados</h><br>
+                </div>
+                <a href="#" class="a-footer-listas">Sandalias</a><br>
+                <a href="#" class="a-footer-listas">Sapatilhas</a><br>
+                <a href="#" class="a-footer-listas">Coturnos</a><br>
+                <a href="#" class="a-footer-listas">Saltos</a><br>
+                <a href="#" class="a-footer-listas">Tênis</a><br>
+            </div>
+
+            <div class="div-footer-Produtos">
+                <div class="margin-h-footer-listas">
+                <h class="h-footer-listas">Produtos</h><br>
+                </div>
+                <a href="#" class="a-footer-listas">Camisas</a><br>
+                <a href="#" class="a-footer-listas">Óculos</a><br>
+                <a href="#" class="a-footer-listas">Jaquetas</a><br>
+                <a href="#" class="a-footer-listas">Shorts</a><br>
+                <a href="#" class="a-footer-listas">Calças</a><br>
+            </div>
+
+            <div class="div-footer-Categorias">
+                <div class="margin-h-footer-listas">
+                <h class="h-footer-listas">Categorias</h><br>
+                </div>
+                <a href="#" class="a-footer-listas">Masculino</a><br>
+                <a href="#" class="a-footer-listas">Feminina</a><br>
+                <a href="#" class="a-footer-listas">Crianças</a><br>
+                <a href="#" class="a-footer-listas">Novidades</a><br>
+                <a href="#" class="a-footer-listas">Plus-size</a><br>
+            </div>
+
+            <div class="div-footer-Designer">
+                <div class="margin-h-footer-listas">
+                <h class="h-footer-listas">Desinger</h> <br>
+                </div>
+                <a href="https://github.com/ellendias01" class="a-footer-listas">Ellen</a><br>
+                <a href="https://github.com/GabrielFillip" class="a-footer-listas">Gabriel</a><br>
+                <a href="https://github.com/habbiner" class="a-footer-listas">Habbiner</a><br>
+                <a href="#" class="a-footer-listas">Leonardo</a><br>
+                <a href="https://github.com/poxapath" class="a-footer-listas">Patricia</a><br>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer-do-footer"> 
+        <p class="p1-footer-do-footer">2024 OUTFIT</p>
+        <p class="p-footer-do-footer">Termos & Condições</p> 
+        <p class="p-footer-do-footer">Politica de Privacidade</p>
+        <p class="p-footer-do-footer">Politica de Cookies</p>
+    </div>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="js/index.js"></script>
+</body>
