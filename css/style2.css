@@ -1,0 +1,119 @@
+/* Organização das divs na página  */
+#center-div-index {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.div-esquerda {
+    margin-right: 129px;
+}
+.div-direita {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 442px;
+}
+
+/* Jogando o botão para o outro lado */
+.btn-portal {
+    display: flex;
+    justify-content: flex-end;
+}
+#btn-portal {
+    font-family: "Inter";
+    font-size: 17px;
+    width: 296px;
+    height: 48px;
+    border-radius: 5px;
+}
+#btn-vendedor {
+    width: 196px; /*tamanho diferente */
+    height: 48px; 
+    font-family: "Inter";
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+
+/* Confugurando os tamanhos dos botões */
+.spans {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+#spans-span1 {
+    font-size: 40px;
+    font-family: "Inika";
+}
+#spans-span1-vendedor {
+    font-size: 35px;
+    font-family: "Inika";
+}
+#spans-span2 {
+    font-size: 35px;
+    font-family: "Inria Serif";
+}
+#spans-span2-vendedor {
+    font-size: 30px;
+    font-family: "Inria Serif";
+}
+.div-campos {
+    display: flex;
+    flex-direction: column;
+}
+#email {
+    margin-bottom: 25px;
+}
+input {
+    width: 442px;
+    height: 49px;
+    border-radius: 5px;
+}
+.link-resetsenha {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    margin: 25px 0px 25px 0px;
+    color: #BC7726;
+    font-family: "Inika";
+}
+
+/* botão login */
+#btn-login {
+    margin-top: 25px;
+    width: 442px;
+    height: 67px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: "Inika";
+    background-color: #AEC5B0;
+    color: #0F462F;}
+
+/* criar conta */
+#novaconta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link-criarconta {
+    text-decoration: none;
+    color: #BC7726;
+    font-size: 14px;
+    font-family: "Inika";
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+/* botão google */
+#btn-google {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-family: "Inika";
+    width: 330px;
+    height: 55px;
+    border-radius: 20px;
+}
+#icon-google {
+    border-radius: 25px;
+    margin: 5px 20px 5px 55px;
+}

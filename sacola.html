@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/style4.css">
+
+    <title>Sacola</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="nav-bar"> <!--Div Principal-->
+
+                <div class="nav-bar-mid"> <!--Miolo da barra-->
+                    <a href="home.html" class="a-nav-bar-titulo">MODA CONECTA</a>
+                    <a class="a-nav-bar">NOVIDADES</a>
+                    <a class="a-nav-bar">OUTLET</a>
+                    <a class="a-nav-bar">CALÇADOS</a> <!--Diretórios da barra-->
+                    <a class="a-nav-bar">ACESSORIOS</a>
+                    <a class="a-nav-bar">PLUS SIZE</a>
+                </div>
+
+                <div class="div-icons-nav-bar"> <!--Div cobrindo os icones.-->
+                    <img class="icon-nav-bar" src="/img/Lupa.png">
+                    <img class="icon-nav-bar" src="/img/Coração.png"> <!--Icones na barra-->
+                    <img class="icon-nav-bar" src="/img/omim.png">
+                    <img class="icon-nav-bar" src="/img/Sacola.png">
+                </div>
+            </div> <!--Fim da barra de navegação-->
+        </header>
+        <main>
+            <div class="icon-caminho">
+                <div class="icon">
+                    <img src="img/sacola.png">
+                    <p>Sacola</p>
+                </div>
+                <div class="loader"></div>
+                <div class="icon">
+                    <img src="img/user.png">
+                    <p>Identificação</p>
+                </div>
+                <div class="loader"></div>
+                <div class="icon">
+                    <img src="img/pagamento.png">
+                    <p>Pagamento</p>
+                </div>
+                <div class="loader"></div>
+                <div class="icon">
+                    <img src="img/verificar.png">
+                    <p>Confirmação</p>
+                </div>
+            </div><!--icon-caminho-->
+
+            <div class="Sacola">
+                <h2>Sacola</h2>
+                <h3>Você tem X itens na sacola</h3>
+                <div class="p1">
+                    <div class="pp">
+                        <p>Produto</p>
+                    </div>
+                    <p>Valor</p>
+                    <p>Quantidade</p>
+                    <p>Total</p>
+                </div><!--p1-->
+                <div class="p2">
+                    <img src="img/produto.svg">
+                    <p>Blusa masculina de linho - Preta </p>
+                    <div class="valor">
+                        <h5> R$ 200 </h5>
+                        <p>R$ 150 </p>
+                    </div><!--valor-->
+                    <div class="quantidade">
+                        <img src="img/mais.png">
+                        <p>1</p>
+                        <img src="img/menos.png">
+                    </div><!--quantidade-->
+                    <div class="lixo1">
+                        <p>R$ 150 </p>
+                        <img src="img/lixo.png" id="lixo">
+                    </div><!--lixo1-->
+                </div><!--p2-->
+            </div><!--sacola-->
+            <hr>
+            <div class="final">
+                <div class="entrega">
+                    <h2>Entrega</h2>
+                    <p>Veja as opções de entrega para seus itens, com todos os prazos e valores.</p>
+                    <div class="cupom-container">
+                        <input type="text" placeholder="Digite sei CEP" class="cupom-input">
+                        <button @click="" class="calcular">Calcular</button>
+                    </div><!--cupom-container-->
+                    <h5>O valor do frete grátis varia de acordo com a região. Consulte o regulamento em </h5>
+                    <a href="modaconecta.com.br/regulamento"> modaconecta.com.br/regulamento</a>
+                </div><!--entrega-->
+
+                <div class="valorFinal">
+                    <div class="cupom-container">
+                        <input type="text" placeholder="cupom" class="cupom-input">
+                        <button @click="" class="calcular">Adicionar</button>
+                    </div><!--cupom-container-->
+                    <div class="subTotal">
+                        <p>SubTotal</p>
+                        <p>R$ 150</p>
+                        <p>Entrega</p>
+                        <p>calcular</p>
+                        <p>Total</p>
+                        <p>R$ 150</p>
+                    </div><!--subTotal-->
+                    <a href="identificacao.html"><button @click="" class="finalizarCompra"> Finalizar Compra </button></a>
+                    <a href="">Continuar Comprando </a>
+                </div><!--valorFinal-->
+            </div><!--final-->
+            <hr>
+        </main>
+        <footer>
+            <p>pagamento</p>
+            <img src="img/cartao.png">
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
