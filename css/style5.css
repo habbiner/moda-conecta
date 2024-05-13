@@ -1,0 +1,220 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "inter";
+}
+
+.nav-bar {
+    display: flex;
+    font-size: 1.2vw;
+    /* Div principal que cobre toda a barra*/
+    width: 100%;
+    height: 5vw;
+    border-bottom: 2px solid #aaaaaa;
+}
+
+.nav-bar-mid {
+    margin: 1.5% 0px 0px 14%;
+    justify-content: center;
+    justify-items: center;
+    /*Div referente ao Miolo da barra que cobre os <a>*/
+    height: 2vw;
+    width: 63.6vw;
+}
+
+.a-nav-bar-titulo {
+    margin: 0px 4.5% 0px 0px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    /*<a> "Moda-conecta" com retangulo em volta*/
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.a-nav-bar {
+    margin: 0px 3.5% 0px 0px;
+    text-decoration: none;
+    /*<a> todos os outros redirecionamentos "Novidade" "Outlet" ...*/
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.div-icons-nav-bar {
+    margin: 1.3% 0px 0px -1.23%;
+    width: 9vw;
+    /*Div com os icones a direita da barra*/
+    height: 2vw;
+}
+
+.icon-nav-bar {
+    height: 1.5vw;
+    margin: 0px 6% 0px 0px;
+    /*Para configurar os icones em si, distancia tamanho etc... */
+    cursor: pointer;
+}
+
+.a-nav-bar-titulo:hover {
+    color: rgb(112, 112, 112);
+    /* Para deixar o <a> "Moda-conecta" <a> cinza, quando o mouse estiver sobre ele*/
+}
+
+.a-nav-bar:hover {
+    color: rgb(112, 112, 112);
+    /* Para deixar os  redirecionamentos <a> cinza, quando o mouse estiver sobre eles*/
+}
+
+.div-icons-nav-bar:hover{
+    color: rgb(112, 112, 112);
+}
+
+/* fim da barra */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 352px;
+    height: 33px;
+    padding: 8px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 64px;
+    height: 56px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    justify-content: space-between;
+    transition: transform 0.3s ease; 
+}
+
+button:hover {
+    transform: scale(1.1); 
+}
+
+.alinhar{
+    align-items:center;
+    display: flex;
+}
+
+.container {
+    width: 63.6vw;
+    justify-content: space-between;
+    margin: 0px 0px 0px 13.65%;
+    flex-direction:column-reverse;
+}
+
+.coluna2{
+    margin-left: 32px;
+}
+
+.size-selector {
+    display: flex;
+}
+
+.tama{
+    border: 1px solid black;
+}
+
+.tama:hover{
+    background-color: #aaaaaa;
+}
+
+.retangulo{
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 10px;
+    width: 345px;
+    height: 160px;
+    justify-content: space-between;
+}
+
+.star{
+    margin-top: -17px;
+}
+
+.retangulo2{
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 10px;
+    width: 348px;
+    height: 160px;
+    justify-content: space-between;
+}
+
+.quadrado {
+    width: 64px;
+    height:50px;
+    margin: 0px 10px 15px 0px;
+    display: inline-block;
+    transition: transform 0.3s ease; 
+}
+
+.cinza {
+    background-color: gray;
+}
+
+.preto {
+    background-color: black;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.amarelo {
+    background-color: yellow;
+}
+
+.coresropa{
+    margin-right: 30px;
+    margin-top: -40px;
+}
+
+.coluna3{
+    margin-left: 32px;
+    margin-top: -491px;
+    display: flex;
+}
+
+.imageropa{
+    margin: 0px 2px 19px -330px;
+}
+
+.arrumacores{
+    margin-top: 38px;
+}
+
+.confirma{
+    margin: 470px 0px 0px -238px;
+    width: 180px;
+    background-color: #3d91eb;
+    color: white;
+}
+
+.confirma:hover{
+    background-color: #007bff;
+}
+
