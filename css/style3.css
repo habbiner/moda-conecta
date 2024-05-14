@@ -1,5 +1,6 @@
-html, body{
-    margin:0;
+html,
+body {
+    margin: 0;
     padding: 0px;
     background-color: rgb(255, 255, 255);
     font-family: "inter";
@@ -7,156 +8,177 @@ html, body{
 
 /*---------------------------------------------------------------------------------Barra de Navegação----------------------------------------------------------------------------------------------*/
 
-.nav-bar{
+.nav-bar {
     display: flex;
     z-index: 3;
-    font-size: 1.2vw;                   /* Div principal que cobre toda a barra*/
+    font-size: 1.2vw;
+    /* Div principal que cobre toda a barra*/
     width: 100%;
     height: 5vw;
-    border-bottom: 2px solid #aaaaaa; 
+    border-bottom: 2px solid #aaaaaa;
     position: fixed;
     background-color: white;
-    margin: -8.0% 0px 0px 0px;
+    margin: -8.1% 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 
-.nav-bar-mid{
+.nav-bar-mid {
     margin: 1.5% 0px 0px 14.5%;
     justify-content: center;
-    justify-items: center;                  /*Div referente ao Miolo da barra que cobre os <a>*/
+    justify-items: center;
+    /*Div referente ao Miolo da barra que cobre os <a>*/
     height: 2vw;
     width: 63.6vw;
 }
 
-.a-nav-bar-titulo{
+.a-nav-bar-titulo {
     margin: 0px 4.5% 0px 0px;
-    border: 1px solid #000; 
-    padding: 5px 10px; 
-    text-decoration: none;                  /*<a> "Moda-conecta" com retangulo em volta*/
+    border: 1px solid #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    /*<a> "Moda-conecta" com retangulo em volta*/
     font-weight: bold;
     cursor: pointer;
     font-size: 1vw
 }
 
-.a-nav-bar{
+.a-nav-bar {
     margin: 0px 3.5% 0px 0px;
-    text-decoration: none;                   /*<a> todos os outros redirecionamentos "Novidade" "Outlet" ...*/
+    text-decoration: none;
+    /*<a> todos os outros redirecionamentos "Novidade" "Outlet" ...*/
     font-weight: bold;
     cursor: pointer;
     color: black;
 }
 
-.div-icons-nav-bar{
+.div-icons-nav-bar {
     margin: 1.3% 0px 0px -1.23%;
-    width: 9vw;                               /*Div com os icones a direita da barra*/
+    width: 9vw;
+    /*Div com os icones a direita da barra*/
     height: 2vw;
 }
 
-.icon-nav-bar{
+.icon-nav-bar {
     height: 1.5vw;
-    margin: 0px 6% 0px 0px;                     /*Para configurar os icones em si, distancia tamanho etc... */
+    margin: 0px 6% 0px 0px;
+    /*Para configurar os icones em si, distancia tamanho etc... */
     cursor: pointer;
 }
 
-.a-nav-bar-titulo:hover{
-    color:rgb(112, 112, 112) ;                   /* Para deixar o <a> "Moda-conecta" <a> cinza, quando o mouse estiver sobre ele*/
+.a-nav-bar-titulo:hover {
+    color: rgb(112, 112, 112);
+    /* Para deixar o <a> "Moda-conecta" <a> cinza, quando o mouse estiver sobre ele*/
 }
 
-.a-nav-bar:hover{
-    color:rgb(112, 112, 112) ;                  /* Para deixar os  redirecionamentos <a> cinza, quando o mouse estiver sobre eles*/
-}   /* fim da barra */
+.a-nav-bar:hover {
+    color: rgb(112, 112, 112);
+    /* Para deixar os  redirecionamentos <a> cinza, quando o mouse estiver sobre eles*/
+}
+
+/* fim da barra */
 
 /*-----------------------------------------------------------------------------Imagem propaganda--------------------------------------------------------------------------------------*/
 
-.img-ad{
+.img-ad {
     margin: 8% 0px 0px 14%;
-    width: 70.1vw;                                                             /*Imagem do anuncio principal, abaixo da nav-bar*/
-    height: 22vw ;
+    width: 70.1vw;
+    /*Imagem do anuncio principal, abaixo da nav-bar*/
+    height: 22vw;
 }
 
 /*-----------------------------------------------------------------------------Novas Coleções-------------------------------------------------------------------------------------------*/
 
-.div-h-novas-colecoes{
+.div-h-novas-colecoes {
     margin: 5.0% 0px 0px 0px;
-    justify-content: center;                                    /*Div com o <h> "NOVAS COLEÇÕES"*/
+    justify-content: center;
+    /*Div com o <h> "NOVAS COLEÇÕES"*/
     display: flex;
 }
 
-.h-novas-colecoes{
+.h-novas-colecoes {
     font-size: 2.5vw;
-    font-weight: bolder;                                        /*<h> "NOVAS COLEÇOES"*/
+    font-weight: bolder;
+    /*<h> "NOVAS COLEÇOES"*/
     letter-spacing: 1px;
     font-family: "Istok Web";
 }
 
-.div-novas-colecoes{
+.div-novas-colecoes {
     margin: 5.0% 0px 0px 0px;
-    display: flex;                                              /*Div os 3 cards*/                                 
+    display: flex;
+    /*Div os 3 cards*/
 }
 
 
-.img-card-1{
+.img-card-1 {
     margin: 0px 2% 0px 0px;
     height: 26.5vw;
-    width:  20vw;                                                /*img 1*/
+    width: 20vw;
+    /*img 1*/
     cursor: pointer;
 }
 
-.img-card-2{
+.img-card-2 {
     margin: 0px 2% 0px 0px;
     height: 26.5vw;
-    width: 20vw;                                                  /*img 2*/
+    width: 20vw;
+    /*img 2*/
     cursor: pointer;
 }
 
-.img-card-3{
+.img-card-3 {
     margin: 0px 0px 3px 0px;
-    height: 26.5vw;                                                 /*img 3*/
+    height: 26.5vw;
+    /*img 3*/
     width: 20vw;
     cursor: pointer;
 }
 
-.div-colecoes-card-1{
-    margin: 0px 5.50% 0px 13.8%;                                   /*card 1*/
+.div-colecoes-card-1 {
+    margin: 0px 5.50% 0px 13.8%;
+    /*card 1*/
 }
 
-.div-colecoes-card-2{
-    margin: 0px 5.50% 0px 0%;                                       /*card 2*/
+.div-colecoes-card-2 {
+    margin: 0px 5.50% 0px 0%;
+    /*card 2*/
 }
 
-.div-colecoes-card-3{
-    width: 20vw;                                                    /*card 3*/
+.div-colecoes-card-3 {
+    width: 20vw;
+    /*card 3*/
 }
 
-.h-colecoes-cards{
-    font-weight: bolder; 
-    font-size: 0.91vw; 
-    font-family: 'Inria Serif';                                     /*<h> nome dos produtos */
+.h-colecoes-cards {
+    font-weight: bolder;
+    font-size: 0.91vw;
+    font-family: 'Inria Serif';
+    /*<h> nome dos produtos */
     margin: 0px -2px 0px 0px;
 }
 
 /*-----------------------------------------------------------------------------Novas Coleções-------------------------------------------------------------------------------------------*/
 
-.img-guarda-roupa{
+.img-guarda-roupa {
     margin: 2% 0px 0px 14%;
     width: 70.1vw;
-    height: 25vw ;
+    height: 25vw;
 }
 
-.div-h-guarda-roupas{
+.div-h-guarda-roupas {
     margin: 5.0% 0px 0px 0px;
     justify-content: center;
     display: flex;
 }
 
-.h-guarda-roupas{
+.h-guarda-roupas {
     font-size: 2.5vw;
     font-weight: bold;
     letter-spacing: 0px;
     font-family: "Istok Web";
 }
 
-.div-p-guarda-roupas{
+.div-p-guarda-roupas {
     justify-content: center;
     display: flex;
     font-family: "Inria Serif";
@@ -165,12 +187,12 @@ html, body{
     color: gray;
 }
 
-.div-button-guarda-roupas{
+.div-button-guarda-roupas {
     justify-content: center;
     display: flex;
 }
 
-.button-guarda-roupas{
+.button-guarda-roupas {
     background-color: #000;
     color: white;
     width: 14vw;
@@ -179,55 +201,62 @@ html, body{
     font-family: "Inria Serif";
     font-size: 1.15vw;
     font-weight: bold;
-    cursor:pointer;
+    cursor: pointer;
     text-decoration: none;
     border: none;
 }
-.button-guarda-roupas:hover{
+
+.button-guarda-roupas:hover {
     background-color: #202020;
 }
 
-.div-categorias-card-1{
-    margin: 0px 0.75% 0px 13.8%;                                   /*card 1*/
+.div-categorias-card-1 {
+    margin: 0px 0.75% 0px 13.8%;
+    /*card 1*/
 }
 
-.div-categorias-card-2{
-    margin: 0px 0.75% 0px 0%;                                       /*card 2*/
+.div-categorias-card-2 {
+    margin: 0px 0.75% 0px 0%;
+    /*card 2*/
 
 }
 
-.div-categorias-card-3{
-    width: 20vw;                                                    /*card 3*/
+.div-categorias-card-3 {
+    width: 20vw;
+    /*card 3*/
 }
 
-.img-card-categorias-1{
+.img-card-categorias-1 {
     margin: 0px 2% 0px 0px;
     height: 28.5vw;
-    width:  23vw;                                                /*img 1*/
+    width: 23vw;
+    /*img 1*/
     cursor: pointer;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgb(173, 173, 173);
 }
 
-.img-card-categorias-2{
+.img-card-categorias-2 {
     margin: 0px 2% 0px 0px;
     height: 28.5vw;
-    width: 23vw;                                                  /*img 2*/
+    width: 23vw;
+    /*img 2*/
     cursor: pointer;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgb(173, 173, 173);
 }
 
-.img-card-categorias-3{
+.img-card-categorias-3 {
     margin: 0px 0px 3px 0px;
-    height: 28.5vw;                                                 /*img 3*/
+    height: 28.5vw;
+    /*img 3*/
     width: 23vw;
     cursor: pointer;
     box-shadow: 0px 4px 10px rgb(173, 173, 173);
     border-radius: 25px;
 }
 
-.p-na-img{
+.p-na-img {
     margin: -120% 0% 0px 6%;
     text-decoration: none;
     color: #000;
@@ -236,7 +265,7 @@ html, body{
     font-weight: 1000;
 }
 
-.button-card-categorias{
+.button-card-categorias {
     margin: 95% 0% 0px 6%;
     text-decoration: none;
     color: #000;
@@ -250,85 +279,94 @@ html, body{
     font-weight: 700;
     cursor: pointer;
 }
-.button-card-categorias:hover{
+
+.button-card-categorias:hover {
     background-color: #c0c0c0;
 }
 
-.div-h-combos{
-    margin: 5.0% 0px 0px 13.85%;                                   /*Div com o <h> "NOVAS COLEÇÕES"*/
+.div-h-combos {
+    margin: 5.0% 0px 0px 13.85%;
+    /*Div com o <h> "NOVAS COLEÇÕES"*/
     display: flex;
 }
 
-.h-combos{
+.h-combos {
     font-size: 2.5vw;
-    font-weight: bolder;                                        /*<h> "NOVAS COLEÇOES"*/
+    font-weight: bolder;
+    /*<h> "NOVAS COLEÇOES"*/
     letter-spacing: 1px;
     font-family: "Istok Web";
 }
 
-.img-card-combos-1{
+.img-card-combos-1 {
     margin: 0px 2% 0px 0px;
     height: 19.5vw;
-    width:  19.5vw;                                                /*img 1*/
+    width: 19.5vw;
+    /*img 1*/
     cursor: pointer;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgb(173, 173, 173);
 }
 
-.img-card-combos-2{
+.img-card-combos-2 {
     margin: 0px 2% 0px 0px;
     height: 19.5vw;
-    width: 19.5vw;                                                  /*img 2*/
+    width: 19.5vw;
+    /*img 2*/
     cursor: pointer;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgb(173, 173, 173);
 }
 
-.img-card-combos-3{
+.img-card-combos-3 {
     margin: 0px 0px 3px 0px;
-    height: 19.5vw;                                                 /*img 3*/
+    height: 19.5vw;
+    /*img 3*/
     width: 19.5vw;
     cursor: pointer;
     box-shadow: 0px 4px 10px rgb(173, 173, 173);
     border-radius: 25px;
 }
 
-.div-combos-card-1{
-    margin: 0px 6% 0px 13.8%;                                   /*card 1*/
+.div-combos-card-1 {
+    margin: 0px 6% 0px 13.8%;
+    /*card 1*/
 }
 
-.div-combos-card-2{
-    margin: 0px 6% 0px 0%;                                       /*card 2*/
+.div-combos-card-2 {
+    margin: 0px 6% 0px 0%;
+    /*card 2*/
 
 }
 
-.div-combos-card-3{
-    width: 20vw;                                                    /*card 3*/
+.div-combos-card-3 {
+    width: 20vw;
+    /*card 3*/
 }
 
 /*-----------------------------------------------------Foooter---------------------------------------------------------------------------*/
 
-.div-footer{
-    display:flex;
+.div-footer {
+    display: flex;
     margin: 13% 0px 7% 0px;
 }
 
-.footer-Moda-conecta-email{
+.footer-Moda-conecta-email {
     margin: 2% 0px 0px 13.81%;
 }
 
-.h-Moda-conecta-footer{
+.h-Moda-conecta-footer {
     font-size: 1.75vw;
     font-weight: bolder;
 }
 
-.p-Moda-conecta-footer{
+.p-Moda-conecta-footer {
     font-size: 0.85vw;
     color: #5e5e5e;
     margin: 0px 0px 10% 0px;
 }
 
-.input-footer{
+.input-footer {
     height: 2vw;
     border-radius: 3vw 0px 0px 3vw;
     width: 14vw;
@@ -336,7 +374,7 @@ html, body{
     padding: 0px 0px 0px 0px;
 }
 
-.button-footer{
+.button-footer {
     border-radius: 0px 3vw 3vw 0px;
     height: 2.38vw;
     margin: 0px 0px 0px 3%;
@@ -348,59 +386,59 @@ html, body{
     font-weight: 50;
 }
 
-.div-footer-Listas{
+.div-footer-Listas {
     display: flex;
     margin: 6% 0px 0px 20%;
     width: 35vw;
     height: 10vw;
 }
 
-.div-footer-Calçados{
+.div-footer-Calçados {
     margin: 0px 7% 0px 0px;
 }
 
-.div-footer-Produtos{
+.div-footer-Produtos {
     margin: 0px 7% 0px 0px;
 }
 
-.div-footer-Categorias{
+.div-footer-Categorias {
     margin: 0px 7% 0px 0px;
 }
 
-.div-footer-Designer{
+.div-footer-Designer {
     margin: 0px 10px 0px 0px;
 }
 
-.h-footer-listas{
+.h-footer-listas {
     font-size: 1.35vw;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 
-.a-footer-listas{
+.a-footer-listas {
     font-size: 0.85vw;
-    color:#5e5e5e ;
+    color: #5e5e5e;
     text-decoration: none;
 }
 
-.a-footer-listas:hover{
+.a-footer-listas:hover {
     font-size: 0.85vw;
-    color:#939393 ;
+    color: #939393;
     text-decoration: none;
 }
 
-.margin-h-footer-listas{
+.margin-h-footer-listas {
     margin: 0px 0px 8% 0px;
 }
 
-.footer-do-footer{
+.footer-do-footer {
     background-color: #181818;
     width: 100%;
     height: 5vw;
     display: flex;
 }
 
-.p1-footer-do-footer{
+.p1-footer-do-footer {
     color: white;
     font-weight: 1000;
     margin: 2% 30.50% 0px 13.81%;
@@ -408,76 +446,63 @@ html, body{
     font-family: "Libre Baskerville";
 }
 
-.p-footer-do-footer{
+.p-footer-do-footer {
     color: white;
     margin: 2% 2.5% 0px 0%;
     font-size: 0.85vw;
     font-family: "Libre Baskerville";
     font-weight: bold;
 
-/*-------------------------------------------------------------------Efeito dos cards quando mouse estiver em cima--------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------Efeito dos cards quando mouse estiver em cima--------------------------------------------------------------------------------*/
 
 }
-.img-card-combos-1:hover{
+
+.img-card-combos-1:hover {
     box-shadow: 0px 0px 20px #a3a3a3;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.05);   
+    -ms-transform: scale(1.05);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.05);
     transition: all 200ms ease-in;
     transform: scale(1.05);
 }
 
-.img-card-combos-2:hover{
+.img-card-combos-2:hover {
     box-shadow: 0px 0px 20px #a3a3a3;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.05);   
+    -ms-transform: scale(1.05);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.05);
     transition: all 200ms ease-in;
     transform: scale(1.05);
 }
 
-.img-card-combos-3:hover{
+.img-card-combos-3:hover {
     box-shadow: 0px 0px 20px #a3a3a3;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.05);   
+    -ms-transform: scale(1.05);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.05);
     transition: all 200ms ease-in;
     transform: scale(1.05);
 }
 
-.div-categorias-card-1:hover{
+.div-categorias-card-1:hover {
     box-shadow: 0px 0px 20px #a3a3a3;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.05);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.05);
-    transition: all 200ms ease-in;
-    transform: scale(1.05);
-    border-radius: 18px;
-}
-
-.div-categorias-card-2:hover{
-    box-shadow: 0px 0px 20px #a3a3a3;
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.05);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.05);   
+    -ms-transform: scale(1.05);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.05);
     transition: all 200ms ease-in;
@@ -485,13 +510,13 @@ html, body{
     border-radius: 18px;
 }
 
-.div-categorias-card-3:hover{
+.div-categorias-card-2:hover {
     box-shadow: 0px 0px 20px #a3a3a3;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.05);   
+    -ms-transform: scale(1.05);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.05);
     transition: all 200ms ease-in;
@@ -499,13 +524,27 @@ html, body{
     border-radius: 18px;
 }
 
-.div-colecoes-card-1:hover{
+.div-categorias-card-3:hover {
+    box-shadow: 0px 0px 20px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    border-radius: 18px;
+}
+
+.div-colecoes-card-1:hover {
     box-shadow: 0px 0px 0px #a3a3a3;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.05);   
+    -ms-transform: scale(1.05);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.05);
     transition: all 200ms ease-in;
@@ -514,13 +553,13 @@ html, body{
 }
 
 
-.div-colecoes-card-2:hover{
+.div-colecoes-card-2:hover {
     box-shadow: 0px 0px 0px #a3a3a3;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.05);   
+    -ms-transform: scale(1.05);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.05);
     transition: all 200ms ease-in;
@@ -528,16 +567,448 @@ html, body{
     border-radius: 18px;
 }
 
-.div-colecoes-card-3:hover{
+.div-colecoes-card-3:hover {
     box-shadow: 0px 0px 0px #a3a3a3;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.05);   
+    -ms-transform: scale(1.05);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.05);
     transition: all 200ms ease-in;
     transform: scale(1.05);
     border-radius: 18px;
+}
+
+
+
+.div-avaliacao-card1:hover {
+    box-shadow: 0px 0px 0px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    border-radius: 18px;
+    cursor: pointer
+}
+
+.div-avaliacao-card2:hover {
+    box-shadow: 0px 0px 0px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    border-radius: 18px;
+    cursor: pointer
+}
+
+.div-avaliacao-card3:hover {
+    box-shadow: 0px 0px 0px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    border-radius: 18px;
+    cursor: pointer
+}
+
+
+/*-----------------------------------------------------------------------DETALHES PRODUTO----------------------------------------------------------------------------*/
+
+
+
+
+.div-info-img {
+    display: flex;
+    margin: 10% 0px 0px 14.5%;
+    width: 70vw;
+}
+
+.div-img-info {
+    width: 30vw;
+    height: 35vw;
+
+}
+
+.div-info-quantidade {
+    display: flex;
+    background-color: rgb(222, 222, 222);
+    height: 2.3vw;
+    width: 40.25vw;
+    border-radius: 10px;
+    margin: 0px 0px 0px 0%;
+
+}
+
+.div-info-produto {
+    width: 50vw;
+    margin: 0px 0px 0px 3%;
+}
+
+.div-preco-img {
+    display: flex;
+}
+
+.div-miolo-quantidade {
+    display: flex;
+}
+
+.div-cores {
+    display: flex;
+    background-color: rgb(222, 222, 222);
+    height: 2.3vw;
+    width: 10.25vw;
+    border-radius: 10px;
+    margin: 0px 0px 0px 0%;
+}
+
+.div-cores-frete {
+    display: flex;
+    margin: 2% 0px 0px 0%;
+}
+
+.h-nome-roupa {
+    font-size: 3vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+    margin: 0px 0px 0px 16.0%;
+}
+
+.p-info-sobre-produtos {
+    font-size: 1.22vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+}
+
+
+.p-info-produtos-quantidades {
+    font-size: 1.22vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+    margin: 0.5% 5% 0px 0px;
+    background-color: rgb(180, 187, 197);
+    border-radius: 10px;
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.p-info-produtos-quantidades:hover {
+    background-color: rgb(114, 114, 114);
+}
+
+.borda-clicada {
+    border: 1px solid rgb(50, 50, 50);
+}
+
+.p1-info-produtos-quantidades {
+    font-size: 1.22vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+    margin: 0px 1% 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p2-info-produtos-quantidades {
+    font-size: 1.22vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+    margin: 0.5% 10% 0px 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 1.7vw;
+    width: 2vw;
+}
+
+.p3-info-produtos-quantidades {
+    font-size: 1.22vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+    margin: 0.0% 0px 0px 2.5%;
+    background-color: rgb(180, 187, 197);
+    border-radius: 10px;
+    height: 2.3vw;
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.p-precos-info-produtos {
+    font-size: 1vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+    margin: 4% 3% 0px 0%;
+}
+
+.p-cores-produtos {
+    font-size: 1.22vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+    margin: 0% 3% 0px 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado-cor {
+    background-color: rgb(177, 11, 33);
+    width: 1.8vw;
+    height: 1.5vw;
+    margin: 3.5% 0px 0px 7%;
+    border-radius: 5px;
+}
+
+.quadrado-cor2 {
+    background-color: rgb(121, 25, 162);
+    width: 1.8vw;
+    height: 1.5vw;
+    margin: 3.5% 0px 0px 7%;
+    border-radius: 5px;
+}
+
+.p-frete-info-produtos {
+    font-size: 1.22vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+    margin: 1% 0% 0px 37%;
+}
+
+.input-CEP {
+    border-radius: 10px;
+    font-family: 'Inria Serif';
+    font-size: 1.22vw;
+    width: 8vw;
+    border: none;
+    background-color: rgb(222, 222, 222);
+}
+
+.div-Sedex-Jadlog {
+    margin: 0px 0px 0px 61%;
+    font-family: 'Inria Serif';
+    font-weight: bold;
+    font-size: 0.75vw;
+}
+
+.p3-frete-info-barra {
+    border-bottom: 1px solid #cecece;
+}
+
+.div-info-desc-tabel {
+    width: 42.4vw;
+    height: 2.5vw;
+    display: flex;
+    margin: 2% 0px 0px 0px;
+}
+
+.p-info-produtos {
+    font-size: 1.22vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+    background-color: rgb(194, 194, 194);
+    width: 5vw;
+    height: 2.5vw;
+    margin: 0px 10% 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.p-info-produtos:hover {
+    box-shadow: 0px 0px 0px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #8e8e8e;
+}
+
+.p-decricao-produtos {
+    font-size: 1.22vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+    background-color: rgb(194, 194, 194);
+    width: 6vw;
+    height: 2.5vw;
+    margin: 0px 10% 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.p-decricao-produtos:hover {
+    box-shadow: 0px 0px 0px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #8e8e8e;
+}
+
+.p-tabela-tamanhos-produtos {
+    font-size: 1.22vw;
+    font-family: 'Inria Serif';
+    font-weight: bolder;
+    background-color: rgb(194, 194, 194);
+    width: 12vw;
+    height: 2.5vw;
+    margin: 0px 10% 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.p-tabela-tamanhos-produtos:hover {
+    box-shadow: 0px 0px 0px #a3a3a3;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #8e8e8e;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.2s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.div-img-tabela-tamanhos {
+    width: 29vw;
+    height: 11vw;
+    margin: 2.5% 0px 0px 1.5%;
+}
+
+.hr-prod-info {
+    margin: 8% 0px 0px 0px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.h-avaliacao {
+    font-size: 1.75vw;
+    font-weight: bolder;
+}
+
+.div-move-h-avaliacao {
+    margin: 5% 0px 0px 14%;
+}
+
+.div-cards-avaliacao {
+    display: flex;
+    margin: 5% 0px 0px 0px;
+}
+
+.div-avaliacao-card1 {
+    background-color: rgb(222, 222, 222);
+    width: 20vw;
+    height: 12vw;
+    border-radius: 10px;
+    margin: 0px 7.6% 0px 14%;
+}
+
+.div-avaliacao-card2 {
+    background-color: rgb(222, 222, 222);
+    width: 20vw;
+    height: 12vw;
+    border-radius: 10px;
+    margin: 0px 7.6% 0px 0px;
+}
+
+.div-avaliacao-card3 {
+    background-color: rgb(222, 222, 222);
+    width: 20vw;
+    height: 12vw;
+    border-radius: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+.div-p-nome-estrela {
+    display: flex;
+}
+
+.p-sobre-avaliacao {
+    font-size: 1.2vw;
+    width: 18vw;
+    height: 6vw;
+    margin: 7% 0px 0px 5%;
+    font-weight: normal;
+}
+
+.p-nome-avaliacao {
+    font-size: 1.2vw;
+    margin: 6% 25% 0px 5%;
+    font-weight: normal;
+    font-weight: bold;
+}
+
+.p-5-avaliacao {
+    font-size: 1.2vw;
+    margin: 6% 0px 0px 5%;
+    font-weight: normal;
+    font-weight: bold;
+}
+
+.img-estrela {
+    margin: 7% 0px 0px 3%;
+    width: 0.8vw;
+
+}
+
+.div-h-relacionados {
+    margin: 5% 0px 0px 14%;
 }
