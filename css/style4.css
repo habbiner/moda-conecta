@@ -72,15 +72,19 @@ body {
 .icon-caminho {
     display: flex;
     align-items: baseline;
-    justify-content: space-evenly; /* Espaçamento uniforme entre os elementos */
+    justify-content: space-evenly;
+    /* Espaçamento uniforme entre os elementos */
     margin: 20px;
 }
 
 .icon {
     display: flex;
-    flex-direction: column; /* Alinha os itens em coluna */
-    align-items: center; /* Centraliza os itens na vertical */
-    gap: 5px; /* Espaçamento entre os elementos */
+    flex-direction: column;
+    /* Alinha os itens em coluna */
+    align-items: center;
+    /* Centraliza os itens na vertical */
+    gap: 5px;
+    /* Espaçamento entre os elementos */
 }
 
 .icon img {

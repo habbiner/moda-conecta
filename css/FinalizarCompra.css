@@ -1,0 +1,559 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "inter";
+}
+
+.nav-bar {
+    display: flex;
+    font-size: 1.2vw;
+    /* Div principal que cobre toda a barra*/
+    width: 100%;
+    height: 5vw;
+    border-bottom: 2px solid #aaaaaa;
+}
+
+.nav-bar-mid {
+    margin: 1.5% 0px 0px 14%;
+    justify-content: center;
+    justify-items: center;
+    /*Div referente ao Miolo da barra que cobre os <a>*/
+    height: 2vw;
+    width: 63.6vw;
+}
+
+.a-nav-bar-titulo {
+    margin: 0px 4.5% 0px 0px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    /*<a> "Moda-conecta" com retangulo em volta*/
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.a-nav-bar {
+    margin: 0px 3.5% 0px 0px;
+    text-decoration: none;
+    /*<a> todos os outros redirecionamentos "Novidade" "Outlet" ...*/
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.div-icons-nav-bar {
+    margin: 1.3% 0px 0px -1.23%;
+    width: 9vw;
+    /*Div com os icones a direita da barra*/
+    height: 2vw;
+}
+
+.icon-nav-bar {
+    height: 1.5vw;
+    margin: 0px 6% 0px 0px;
+    /*Para configurar os icones em si, distancia tamanho etc... */
+    cursor: pointer;
+}
+
+.a-nav-bar-titulo:hover {
+    color: rgb(112, 112, 112);
+    /* Para deixar o <a> "Moda-conecta" <a> cinza, quando o mouse estiver sobre ele*/
+}
+
+.a-nav-bar:hover {
+    color: rgb(112, 112, 112);
+    /* Para deixar os  redirecionamentos <a> cinza, quando o mouse estiver sobre eles*/
+}
+
+/* fim da barra */
+
+/* Sacola */
+
+.icon-caminho {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin: 20px;
+    gap: 9px;
+}
+
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    /* Alinha os itens em coluna */
+    align-items: center;
+    /* Centraliza os itens na vertical */
+    gap: 5px;
+    /* Espaçamento entre os elementos */
+}
+
+.icon img {
+    width: 36px;
+    height: 36px;
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+    /* Adicione estilos adicionais conforme necessário */
+}
+
+.loader {
+    display: block;
+    --height-of-loader: 4px;
+    --loader-color: #0071e2;
+    width: 130px;
+    height: var(--height-of-loader);
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    background: var(--loader-color);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    animation: moving 1s ease-in-out infinite;
+    ;
+
+}
+
+.top {
+    display: flex;
+    gap: 30px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+/*Dados Pessoais*/
+
+.dadospessoais {
+    border: 1px solid #000;
+    padding-bottom: 35px;
+    /* Adiciona um espaçamento interno */
+    width: 660px;
+}
+
+.dadospessoais h3 {
+    padding-left: 5px;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os elementos emparelhados sejam exibidos em linhas separadas */
+    gap: 33px;
+    align-items: flex-end;
+    padding-left: 10px;
+}
+
+.inputLabel {
+    width: 200px;
+    /* Define uma largura fixa para os rótulos */
+    padding: 10px;
+    padding-left: 0;
+}
+
+.input2 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#email1 {
+    flex: 1;
+    /* Ocupa todo o espaço disponível */
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    outline: 0;
+    background: transparent;
+    width: 620px;
+}
+
+.email {
+    flex: 1;
+    /* Ocupa todo o espaço disponível */
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    outline: 0;
+    background: transparent;
+}
+
+.finalizar {
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: rgb(181, 181, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 375px;
+}
+#finalizar {
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: rgb(181, 181, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.finalizar:hover {
+    background-color: rgb(88, 255, 255);
+    cursor: pointer;
+}
+
+/* Dados Pessoais*/
+
+/*Resumo*/
+.resumo {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* Primeira coluna para o conteúdo, segunda coluna para a imagem */
+    background-color: #aaaaaa;
+    width: 384px;
+    height: 296px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.resumo img {
+    width: 147px;
+    height: 183px;
+    border-radius: 5px;
+    align-self: end;
+    /* Alinha a imagem à parte inferior da coluna */
+}
+
+.resumo-conteudo {
+    padding: 10px;
+    /* Adiciona um espaçamento interno */
+}
+
+.resumo-conteudo h5 {
+    margin-top: 3px;
+    font-size: large;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-right: 20px;
+    gap: 10px;
+
+}
+
+.texto h4,
+h6,
+p,
+a {
+    margin: 0;
+    padding-top: 18px;
+}
+
+.texto a {
+    text-align: center;
+}
+
+.texto1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtotal {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+/*Entega e Pagamento*/
+.entrega0 h2,
+p,
+.pagamento0 h2,
+p {
+    margin: 0;
+    padding: 5px;
+}
+
+.entrega0,
+.pagamento0 {
+    margin-top: 70px;
+}
+
+.pagamento0 {
+    margin-bottom: 60px;
+}
+
+/* Coódigo 2, depois que os dados pessoais foram inseridos*/
+
+/* Dados pessoais*/
+
+.dadospessoais1 {
+    margin-bottom: 90px;
+}
+
+.texto2 {
+    display: grid;
+    grid-template-columns: 500px auto;
+    /* Duas colunas */
+    align-items: center;
+    /* Centraliza verticalmente os itens */
+    column-gap: 10px;
+    /* Espaçamento entre as colunas */
+}
+
+.texto2 h4 {
+    margin: 0;
+    /* Remove margens padrão do h4 */
+}
+
+.texto3 p {
+    color: #aaaaaa;
+    padding: 2px;
+}
+
+.icon-link {
+    display: flex;
+    /* Display flex para alinhar o ícone e o link */
+    align-items: center;
+    /* Centraliza verticalmente os itens */
+}
+
+.icon-link svg {
+    width: 24px;
+    /* Define a largura do SVG */
+    height: 24px;
+    /* Define a altura do SVG */
+}
+
+.icon-link a {
+    color: #0F462F;
+    /* Cor do link */
+    text-decoration: none;
+    /* Remove sublinhado padrão do link */
+}
+
+/* Dados pessoais*/
+
+/*Entrga*/
+
+.dadospessoais2 {
+    margin-bottom: 40px;
+}
+
+.entrega,
+.entrega2 {
+    border: 1px solid #000;
+    padding: 15px;
+    /* Adiciona um espaçamento interno */
+    width: 660px;
+    margin-bottom: 10px;
+}
+
+.entrega h5 {
+    margin: 0;
+}
+
+.entrega1 {
+    display: flex;
+    gap: 60px;
+}
+
+/* Entrega 2*/
+
+.endereco {
+    margin: 20px;
+    border: 1px solid #000;
+    padding: 15px;
+    /* Adiciona um espaçamento interno */
+    width: 512px;
+    display: flex;
+}
+
+.endereco a {
+    text-align: end;
+}
+
+.receba {
+    background-color: #aaaaaa;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 22px auto auto auto auto;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.entrega2 h5 {
+    margin: 0;
+}
+
+.entrega2 h4 {
+    text-align: center;
+}
+
+.entrega2 button {
+    margin-left: 458px;
+    margin-top: 30px;
+}
+
+.numerocomplemento {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    outline: 0;
+    background: transparent;
+    margin-left: 25px;
+    width: 200px;
+}
+
+/*Entrega 2*/
+
+/*Pagamento*/
+.pagamento1{
+    border: 1px solid #000;
+    padding: 15px;
+    /* Adiciona um espaçamento interno */
+    width: 660px;
+    margin-bottom: 10px;
+    margin-bottom: 200px;
+}
+.texto2 p {
+    text-align: center;
+}
+
+.texto4 {
+    display: grid;
+    grid-template-columns: 280px 280px 100px;
+    gap: 10px;
+    justify-items: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.texto4 p {
+    color: #aaaaaa;
+}
+
+.pag{
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 660px;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.pag:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+.card1{
+    flex: 1;
+    /* Ocupa todo o espaço disponível */
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    outline: 0;
+    background: transparent;
+    width: 620px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card p {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+#parcelas{
+    margin-top: 10px;
+}
+select {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilo das opções do select */
+select option {
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+select:focus {
+    outline: none;
+    border-color: blue; /* Cor da borda quando focado */
+}
+select::-ms-expand {
+    display: none; /* Esconde a seta no Internet Explorer */
+}
+
+select::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove a aparência padrão do Webkit */
+    margin: 0; /* Remove o espaço entre as setas */
+}
+.hidden {
+    display: none;
+}
+/*Fim da Entrega e Subtotal */
+footer {
+    display: flex;
+}
+
+footer img {
+    width: 350px;
+    height: 50px;
+}
