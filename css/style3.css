@@ -39,7 +39,8 @@ body {
     /*<a> "Moda-conecta" com retangulo em volta*/
     font-weight: bold;
     cursor: pointer;
-    font-size: 1vw
+    font-size: 1vw;
+    color: black
 }
 
 .a-nav-bar {
@@ -53,7 +54,7 @@ body {
 
 .div-icons-nav-bar {
     margin: 1.3% 0px 0px -1.23%;
-    width: 9vw;
+    width: 10vw;
     /*Div com os icones a direita da barra*/
     height: 2vw;
 }
