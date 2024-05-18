@@ -47,3 +47,13 @@
     font-family: "Inika";
     text-decoration: none;
 }
+/* Acrescento a configuração do botão para retorno de tela  */
+#link-retornotela {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    margin: 5px 0px 5px 0px;
+    color: #BC7726;
+    font-family: "Inika";
+    background-color: aqua;
+}

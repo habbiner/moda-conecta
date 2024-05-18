@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <style>@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');</style>        <title>Document</title>
+        <!-- <style>@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');</style>        <title>Document</title> -->
     </head>
 
     <body>
@@ -25,17 +25,21 @@
                     </div>  
 
                     <p id="p-resetsenha">Informe seu email para recuperação</p>
-                    
                     <label for="email"><b>Email</b></label>
                     <input type="email" id="email" placeholder=" user@email.com">
                     
-                    <a href=""><button id="btn-recuperarsenha"><b>Recuperar Senha</b></button></a>
+                    <!-- botão para retorno de tela -->
+                    <div>
+                        <a href="index.html" id="link-retornotela">Voltar para tela de Login</a>
+                    </div>
 
+                    <a href=""><button id="btn-recuperarsenha"><b>Recuperar Senha</b></button></a>
                 </form>
             </div>
         </div>
         
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="https://kit.fontawesome.com/e5f2843f3a.js" crossorigin="anonymous"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
