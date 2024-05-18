@@ -1,3 +1,7 @@
+html{
+    font-family: "inter" ;
+}
+
 body {
     margin-left: 5%;
     margin-right: 5%;
@@ -71,9 +75,6 @@ body {
 
 /* fim da barra */
 
-body {
-    font-family: Arial, sans-serif;
-}
 
 .form-group {
     margin-bottom: 20px;
