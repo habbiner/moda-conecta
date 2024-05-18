@@ -43,7 +43,7 @@ body {
 
 .div-icons-nav-bar {
     margin: 1.3% 0px 0px -1.23%;
-    width: 9vw;
+    width: 11vw;
     /*Div com os icones a direita da barra*/
     height: 2vw;
 }
@@ -126,9 +126,9 @@ body {
 
 .top {
     display: flex;
-    gap: 30px;
+    gap: 10%;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 /*Dados Pessoais*/
@@ -348,7 +348,21 @@ p {
     text-decoration: none;
     /* Remove sublinhado padrão do link */
 }
+.butao{
+    width: 220px;
+    height: 60px;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: rgb(181, 181, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 210px;
+    font-size: larger;
 
+}
 /* Dados pessoais*/
 
 /*Entrga*/
