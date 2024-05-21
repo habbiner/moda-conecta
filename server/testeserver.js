@@ -1,6 +1,7 @@
 const express = require('express');
 const { Connection, Request } = require("tedious");
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 app.use(bodyParser.json());
@@ -55,12 +56,14 @@ async function executeStatement(query) {
     });
 }
 
-// Rota para a página principal
+app.use(express.static(path.join(__dirname, '..')));
+app.use('/css', express.static(path.join(__dirname, '../css')));
+app.use('/img', express.static(path.join(__dirname, '../img')));
+
 app.get('/', (req, res) => {
-    res.status(200).send("Conexão bem-sucedida ao banco de dados");
+    res.sendFile(path.join(__dirname, '../', 'index.html'));
 });
 
-// Rota para execução do SELECT * FROM Login
 app.get('/login', async (req, res) => {
     try {
         const results = await executeStatement('SELECT * FROM Login');
@@ -73,7 +76,6 @@ app.get('/login', async (req, res) => {
     }
 });
 
-// Rota para execução do SELECT * FROM TamanhoPeca
 app.get('/tamanho-peca', async (req, res) => {
     try {
         const results = await executeStatement('SELECT * FROM TamanhoPeca');
@@ -86,7 +88,6 @@ app.get('/tamanho-peca', async (req, res) => {
     }
 });
 
-// Rota para execução do SELECT * FROM CorPeca
 app.get('/cor-peca', async (req, res) => {
     try {
         const results = await executeStatement('SELECT * FROM CorPeca');
@@ -99,7 +100,6 @@ app.get('/cor-peca', async (req, res) => {
     }
 });
 
-// Rota para execução do SELECT * FROM CadastroProduto
 app.get('/cadastro-produto', async (req, res) => {
     try {
         const results = await executeStatement('SELECT * FROM CadastroProduto');
@@ -112,59 +112,87 @@ app.get('/cadastro-produto', async (req, res) => {
     }
 });
 
-// Rota POST para a tabela Login
 app.post('/login', (req, res) => {
     const { email, senha } = req.body;
     const query = `INSERT INTO Login (email, senha) VALUES ('${email}', '${senha}')`;
-    executeStatement(query, (err) => {
-        if (err) {
-            res.status(500).send('Erro ao inserir na tabela Login.');
-        } else {
+    executeStatement(query)
+        .then(() => {
             res.status(200).send('Dados inseridos com sucesso na tabela Login.');
-        }
-    });
+        })
+        .catch(err => {
+            console.error('Erro ao inserir na tabela Login:', err);
+            res.status(500).send('Erro ao inserir na tabela Login.');
+        });
 });
 
-// Rota POST para a tabela TamanhoPeca
 app.post('/tamanho-peca', (req, res) => {
     const { nome_tamanho } = req.body;
     const query = `INSERT INTO TamanhoPeca (nome_tamanho) VALUES ('${nome_tamanho}')`;
-    executeStatement(query, (err) => {
-        if (err) {
-            res.status(500).send('Erro ao inserir na tabela TamanhoPeca.');
-        } else {
+    executeStatement(query)
+        .then(() => {
             res.status(200).send('Dados inseridos com sucesso na tabela TamanhoPeca.');
-        }
-    });
+        })
+        .catch(err => {
+            console.error('Erro ao inserir na tabela TamanhoPeca:', err);
+            res.status(500).send('Erro ao inserir na tabela TamanhoPeca.');
+        });
 });
 
-// Rota POST para a tabela CorPeca
 app.post('/cor-peca', (req, res) => {
     const { nome_cor } = req.body;
     const query = `INSERT INTO CorPeca (nome_cor) VALUES ('${nome_cor}')`;
-    executeStatement(query, (err) => {
-        if (err) {
-            res.status(500).send('Erro ao inserir na tabela CorPeca.');
-        } else {
+    executeStatement(query)
+        .then(() => {
             res.status(200).send('Dados inseridos com sucesso na tabela CorPeca.');
-        }
-    });
+        })
+        .catch(err => {
+            console.error('Erro ao inserir na tabela CorPeca:', err);
+            res.status(500).send('Erro ao inserir na tabela CorPeca.');
+        });
 });
 
-// Rota POST para a tabela CadastroProduto
 app.post('/cadastro-produto', (req, res) => {
     const { nome_peca, valor_peca, categoria_peca, descricao_peca, codigo_peca, qtd_estoque, id_tamanho_peca, img_peca, id_color_peca } = req.body;
     const query = `
         INSERT INTO CadastroProduto (nome_peca, valor_peca, categoria_peca, descricao_peca, codigo_peca, qtd_estoque, id_tamanho_peca, img_peca, id_color_peca)
         VALUES ('${nome_peca}', ${valor_peca}, '${categoria_peca}', '${descricao_peca}', '${codigo_peca}', ${qtd_estoque}, ${id_tamanho_peca}, '${img_peca}', ${id_color_peca})
     `;
-    executeStatement(query, (err) => {
-        if (err) {
-            res.status(500).send('Erro ao inserir na tabela CadastroProduto.');
-        } else {
+    executeStatement(query)
+        .then(() => {
             res.status(200).send('Dados inseridos com sucesso na tabela CadastroProduto.');
-        }
-    });
+        })
+        .catch(err => {
+            console.error('Erro ao inserir na tabela CadastroProduto:', err);
+            res.status(500).send('Erro ao inserir na tabela CadastroProduto.');
+        });
+});
+
+app.get('/pedidos', async (req, res) => {
+    try {
+        const results = await executeStatement('SELECT * FROM Pedidos');
+        console.log(`Resultados da consulta na tabela Pedidos:`);
+        console.log(results);
+        res.status(200).json(results);
+    } catch (err) {
+        console.error('Erro ao executar a consulta:', err);
+        res.status(500).send('Erro ao executar a consulta');
+    }
+});
+
+app.post('/pedidos', (req, res) => {
+    const { cliente_id, data_pedido, valor_total } = req.body;
+    const query = `
+        INSERT INTO Pedidos (cliente_id, data_pedido, valor_total)
+        VALUES (${cliente_id}, '${data_pedido}', ${valor_total})
+    `;
+    executeStatement(query)
+        .then(() => {
+            res.status(200).send('Dados inseridos com sucesso na tabela Pedidos.');
+        })
+        .catch(err => {
+            console.error('Erro ao inserir na tabela Pedidos:', err);
+            res.status(500).send('Erro ao inserir na tabela Pedidos.');
+        });
 });
 
 const port = process.env.PORT || 3000;
