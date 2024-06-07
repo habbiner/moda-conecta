@@ -41,10 +41,10 @@
                     <a href="resetsenha.html" class="link-resetsenha">Esqueceu a senha?</a>
 
                     <!-- botão login -->
-                    <a href="home.html"><button id="btn-login"><b>Login</b></button></a>
+                    <button @click="loginConta()" id="btn-login"><b>Login</b></button>
                     <!-- criar conta -->
                     <div id ="novaconta">
-                        <a href="" class="link-criarconta">Não tem conta? Criar conta</a>
+                        <a href="cadastro-usuario.html" class="link-criarconta">Não tem conta? Criar conta</a>
                         <a href="">
                             <button id="btn-google">
                                 <img src="img/google-icon.svg" alt="Google Icon" id="icon-google">
@@ -58,6 +58,6 @@
 
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="https://kit.fontawesome.com/e5f2843f3a.js" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
+        <script src="js/login.js"></script>
     </body>
 </html>

@@ -63,6 +63,12 @@
 #email {
     margin-bottom: 25px;
 }
+#criar_email {
+    margin-bottom: 25px;
+}
+#criar_senha {
+    margin-bottom: 25px;
+}
 input {
     width: 442px;
     height: 49px;

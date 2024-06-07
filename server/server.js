@@ -125,6 +125,41 @@ app.post('/login', (req, res) => {
         });
 });
 
+app.post('/validar-login', async (req, res) => {
+    const { email, senha } = req.body;
+    const query = `SELECT * FROM Login WHERE email = '${email}' AND senha = '${senha}'`;
+
+    try {
+        const results = await executeStatement(query);
+        if (results.length > 0) {
+            // Credenciais válidas, responder com sucesso
+            res.status(200).send('Login bem-sucedido!');
+        } else {
+            // Credenciais inválidas, responder com erro
+            res.status(401).send('Credenciais inválidas!');
+        }
+    } catch (err) {
+        console.error('Erro ao executar a consulta:', err);
+        res.status(500).send('Erro ao executar a consulta');
+    }
+});
+
+app.post('/cadastrar-usuario', async (req, res) => {
+    const { email, senha } = req.body;
+    const query = `INSERT INTO Login (email, senha) VALUES ('${email}', '${senha}')`;
+
+    try {
+        await executeStatement(query);
+        console.log('Usuário cadastrado com sucesso.');
+        res.status(200).send('Usuário cadastrado com sucesso.');
+    } catch (err) {
+        console.error('Erro ao cadastrar o usuário:', err);
+        res.status(500).send('Erro ao cadastrar o usuário.');
+    }
+});
+
+
+
 app.post('/tamanho-peca', (req, res) => {
     const { nome_tamanho } = req.body;
     const query = `INSERT INTO TamanhoPeca (nome_tamanho) VALUES ('${nome_tamanho}')`;

@@ -116,8 +116,9 @@ button:hover {
 }
 
 .alinhar{
-    align-items:center;
     display: flex;
+    justify-content: space-between;
+    background-color: pink;
 }
 
 .container {
@@ -127,20 +128,19 @@ button:hover {
     flex-direction:column-reverse;
 }
 
-.coluna2{
-    margin-left: 32px;
+.coluna1 {
+    width: auto;
+    height: auto;
+}
+
+.coluna2 {
+    width: auto;
+    height: auto;
+    background-color: #3d91eb;
 }
 
 .size-selector {
     display: flex;
-}
-
-.tama{
-    border: 1px solid black;
-}
-
-.tama:hover{
-    background-color: #aaaaaa;
 }
 
 .retangulo{
@@ -189,27 +189,35 @@ button:hover {
     background-color: yellow;
 }
 
-.coresropa{
-    margin-right: 30px;
-    margin-top: -40px;
-}
-
 .coluna3{
-    margin-left: 32px;
-    margin-top: -491px;
+    display: block;
+    justify-content: center;
+    background-color: #8e8e8e;
+    width: 300px;
+    height: auto;
+}
+
+.upImage {
+    height: 230px;
+    width: 200px;
+    align-items: end;
+    border: 1px solid;
     display: flex;
+    justify-content: end;
+    margin: 10px 10px 10px 15%;
+    background-image: url("/img/Roupa 1.png");
 }
 
-.imageropa{
-    margin: 0px 2px 19px -330px;
-}
-
-.arrumacores{
-    margin-top: 38px;
+select {
+    width: 370px;
+    height: 51px;
+    padding: 8px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
 }
 
 .confirma{
-    margin: 470px 0px 0px -238px;
+    margin: 10px 10px 10px 20%;
     width: 180px;
     background-color: #3d91eb;
     color: white;
