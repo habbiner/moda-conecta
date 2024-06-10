@@ -71,10 +71,9 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 O site **Moda Conecta** permite que você busque e visualize informações detalhadas sobre vestimentas, bem como realize compras online. Siga as instruções abaixo para aproveitar todas as funcionalidades do site.
 
 1. **Acessar o Site:**
-   - Visite o site **[Moda Conecta](#)** para começar a explorar os produtos disponíveis.
+   - Visite o site **[Moda Conecta](https://moda-conecta.onrender.com)** para começar a explorar os produtos disponíveis.
 
 2. **Busca e Navegação:**
-   - Na página inicial, utilize a barra de pesquisa para encontrar produtos específicos.
    - Explore as opções do menu, como Loja, Promoções, Categorias e Produtos em Alta.
    - Adicione produtos aos favoritos ou ao carrinho para facilitar suas compras.
 
@@ -105,15 +104,12 @@ O site **Moda Conecta** permite que você busque e visualize informações detal
       - Imagem do produto
 
 5. **Cadastro e Login:**
-   - Registre-se como usuário fornecendo nome, cargo e senha.
+   - Registre-se como usuário fornecendo nome e senha.
    - Utilize opções de login via redes sociais ou recuperação de senha em caso de problemas de acesso.
 
 6. **Carrinho e Pedidos:**
    - Visualize os produtos adicionados ao carrinho, modifique quantidades ou remova itens conforme necessário.
    - Acompanhe seus pedidos na seção "Meus Pedidos", onde você encontrará informações sobre data da compra, nome do produto, quantidade e opções de devolução.
-
-7. **Mensagens de Erro:**
-   - Caso um produto não seja encontrado ou ocorra algum erro, mensagens amigáveis serão exibidas para informar o usuário.
 
 ### Benefícios Esperados
 - **Aumento de vendas online:** Expansão do mercado para além da loja física.
@@ -195,24 +191,62 @@ A seguir, apresentamos a modelagem do banco de dados, incluindo o diagrama, tabe
 
 ## Exemplos de CRUD
 
-### Criar Produto (Create)
+### Consulta tabela login
 
 ```javascript
-app.post('/produtos', (req, res) => {
-    const { nome, valor, descricao, tamanhos, cor, codigo, quantidade, categoria, imagem } = req.body;
-    // Teste
-    res.status(201).send('Produto criado com sucesso!');
+app.get('/login', async (req, res) => {
+    try {
+        const results = await executeStatement('SELECT * FROM Login');
+        console.log(`Resultados da consulta na tabela Login:`);
+        console.log(results);
+        res.status(200).json(results);
+    } catch (err) {
+        console.error('Erro ao executar a consulta:', err);
+        res.status(500).send('Erro ao executar a consulta');
+    }
 });
 ```
 
-### Atualizar Produto (Update)
+### Envio de dados de login
 
 ```javascript
-app.put('/produtos/:id', (req, res) => {
-   const { id } = req.params;
-   const { nome, valor, descricao, tamanhos, cor, codigo, quantidade, categoria, imagem } = req.body;
-   // Lógica para atualizar o produto no banco de dados
-   res.status(200).send('Produto atualizado com sucesso!');
+app.post('/validar-login', async (req, res) => {
+    const { email, senha } = req.body;
+    const query = `SELECT * FROM Login WHERE email = '${email}' AND senha = '${senha}'`;
+
+    try {
+        const results = await executeStatement(query);
+        if (results.length > 0) {
+            // Credenciais válidas, responder com sucesso
+            res.status(200).send('Login bem-sucedido!');
+        } else {
+            // Credenciais inválidas, responder com erro
+            res.status(401).send('Credenciais inválidas!');
+        }
+    } catch (err) {
+        console.error('Erro ao executar a consulta:', err);
+        res.status(500).send('Erro ao executar a consulta');
+    }
+});
+```
+
+### Cadastrar produto
+
+```javascript
+app.post('/cadastro-produto', (req, res) => {
+    const { nome_peca, valor_peca, categoria_peca, descricao_peca, codigo_peca, qtd_estoque, id_tamanho_peca, img_peca, id_color_peca } = req.body;
+    const query = `
+        INSERT INTO CadastroProduto (nome_peca, valor_peca, categoria_peca, descricao_peca, codigo_peca, qtd_estoque, id_tamanho_peca, img_peca, id_color_peca)
+        VALUES ('${nome_peca}', ${valor_peca}, '${categoria_peca}', '${descricao_peca}', '${codigo_peca}', ${qtd_estoque}, ${id_tamanho_peca}, '${img_peca}', ${id_color_peca})
+    `;
+    executeStatement(query)
+        .then(() => {
+            res.status(200).send('Dados inseridos com sucesso na tabela CadastroProduto.');
+        })
+        .catch(err => {
+            console.error('Erro ao inserir na tabela CadastroProduto:', err);
+            res.status(500).send('Erro ao inserir na tabela CadastroProduto.');
+        });
 });
 ```
 <hr>
