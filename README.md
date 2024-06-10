@@ -251,6 +251,27 @@ app.post('/cadastro-produto', (req, res) => {
 ```
 <hr>
 
+# 📊 Configuração do Banco de Dados
+O arquivo se encontra no caminho server/server.js com as seguintes configurações
+
+```javascript
+const config = {
+    authentication: {
+        options: {
+            userName: "userName",
+            password: "pass**"
+        },
+        type: "default"
+    },
+    server: "server.database.windows.net",
+    options: {
+        database: "server",
+        encrypt: true,
+        trustServerCertificate: false
+    }
+};
+```
+
 # 🚀 Como Clonar e Executar o Projeto
 Siga os passos abaixo para clonar e executar o projeto localmente.
 
