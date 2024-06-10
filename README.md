@@ -49,7 +49,7 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 
 | Tela inicial                                                                                                               |
 |----------------------------------------------------------------------------------------------------------------------------|
-| ![Tela Inicial](#)          |
+| ![Tela Inicial](img/home%20moda%20conecta.png)          |
 
 | Tela de produtos       |  
 |------------------------|  
@@ -59,7 +59,7 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 
 | Detalhes do produto   |    Carrinho                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| ![Detalhes Produto](#)       | ![Carrinho](#)               |
+| ![Detalhes Produto](img/detalhe%20produto.png)       | ![Carrinho](#)               |
 
 ---
 
