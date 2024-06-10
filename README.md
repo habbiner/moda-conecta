@@ -66,7 +66,7 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 
 ---
 
-### 🧑‍💻 Como Utilizar o Site [Moda Conecta](#)
+# 🧑‍💻 Como Utilizar o Site [Moda Conecta](#)
 
 O site **Moda Conecta** permite que você busque e visualize informações detalhadas sobre vestimentas, bem como realize compras online. Siga as instruções abaixo para aproveitar todas as funcionalidades do site.
 
