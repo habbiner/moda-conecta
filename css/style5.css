@@ -118,7 +118,6 @@ button:hover {
 .alinhar{
     display: flex;
     justify-content: space-between;
-    background-color: pink;
 }
 
 .container {
@@ -136,7 +135,6 @@ button:hover {
 .coluna2 {
     width: auto;
     height: auto;
-    background-color: #3d91eb;
 }
 
 .size-selector {
@@ -192,7 +190,6 @@ button:hover {
 .coluna3{
     display: block;
     justify-content: center;
-    background-color: #8e8e8e;
     width: 300px;
     height: auto;
 }
@@ -206,6 +203,7 @@ button:hover {
     justify-content: end;
     margin: 10px 10px 10px 15%;
     background-image: url("/img/Roupa 1.png");
+    background-size: cover;
 }
 
 select {
