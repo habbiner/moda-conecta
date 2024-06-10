@@ -1,0 +1,24 @@
+.container {
+    display: flex; /* Torna os produtos flexíveis */
+    flex-wrap: wrap; /* Faz os produtos quebrarem para a próxima linha quando não couberem mais */
+}
+
+.produto {
+    width: 200px; /* Largura fixa para cada produto */
+    margin: 10px; /* Margem ao redor de cada produto */
+    text-align: center; /* Centraliza o conteúdo dentro do produto */
+}
+
+.produto img {
+    width: 100%; /* Imagens ocupam 100% da largura da div do produto */
+    height: auto; /* Altura automática para manter a proporção da imagem */
+}
+
+.produto h2 {
+    margin-top: 10px; /* Margem superior para o nome do produto */
+    font-size: 1.2em; /* Tamanho da fonte para o nome do produto */
+}
+
+.produto p {
+    font-weight: bold; /* Deixa o preço em negrito */
+}
