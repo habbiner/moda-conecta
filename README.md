@@ -18,14 +18,11 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 
 # 🖥️ Funcionalidades
 
-* **Busca por Nome e Filtros**: Digite o nome do produto ou use filtros para encontrar rapidamente o que deseja.
 * **Favoritos e Carrinho**: Adicione produtos aos favoritos ou ao carrinho para uma compra facilitada.
 * **Detalhes do Produto**: Visualize informações detalhadas dos produtos, como tamanho, cor, descrição e avaliações.
 * **Cadastro de Produtos**: Administre o catálogo de produtos com facilidade através do portal de administrador.
 * **Cadastro de Usuários**: Gerencie usuários, incluindo administradores e clientes.
-* **Gerenciamento de Pedidos**: Acompanhe e gerencie pedidos feitos pelos clientes.
 * **Login e Autenticação**: Sistema de login seguro com opções de recuperação de senha e login via redes sociais.
-* **Interface Responsiva**: Design amigável e responsivo para diferentes dispositivos.
 * **Feedback Visual**: Mensagens de erro personalizadas e animações para uma experiência de usuário agradável.
 
 <hr>
@@ -66,12 +63,12 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 
 ---
 
-# 🧑‍💻 Como Utilizar o Site [Moda Conecta](#)
+# 🧑‍💻 Como Utilizar o Site [Moda Conecta](https://moda-conecta.onrender.com/)
 
 O site **Moda Conecta** permite que você busque e visualize informações detalhadas sobre vestimentas, bem como realize compras online. Siga as instruções abaixo para aproveitar todas as funcionalidades do site.
 
 1. **Acessar o Site:**
-   - Visite o site **[Moda Conecta](https://moda-conecta.onrender.com)** para começar a explorar os produtos disponíveis.
+   - Visite o site **[Moda Conecta](https://moda-conecta.onrender.com/)** para começar a explorar os produtos disponíveis.
 
 2. **Busca e Navegação:**
    - Explore as opções do menu, como Loja, Promoções, Categorias e Produtos em Alta.
