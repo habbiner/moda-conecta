@@ -4,6 +4,18 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 
 <hr>
 
+# Índice 
+* [Funcionalidades](#%EF%B8%8F-funcionalidades)
+* [Tecnologias Utilizadas](#%EF%B8%8F-tecnologias-utilizadas)
+* [Interface](#-interface)
+* [Como Utilizar o Site Moda Conecta](#-como-utilizar-o-site-moda-conecta)
+* [Estruturação do Banco de Dados](#-estruturação-do-banco-de-dados)
+* [Como Clonar e Executar o Projeto](#-como-clonar-e-executar-o-projeto)
+* [Design e Desenvolvimento do Projeto](#-design-e-desenvolvimento-do-projeto)
+* [Licença](#licença)
+
+<hr>
+
 # 🖥️ Funcionalidades
 
 * **Busca por Nome e Filtros**: Digite o nome do produto ou use filtros para encontrar rapidamente o que deseja.
