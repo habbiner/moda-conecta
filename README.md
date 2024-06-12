@@ -12,7 +12,7 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 * [Estruturação do Banco de Dados](#-estruturação-do-banco-de-dados)
 * [Como Clonar e Executar o Projeto](#-como-clonar-e-executar-o-projeto)
 * [Design e Desenvolvimento do Projeto](#-design-e-desenvolvimento-do-projeto)
-* [Docuemtação](https://github.com/habbiner/moda-conecta/tree/main/documentacao)
+* [Documentação](https://github.com/habbiner/moda-conecta/tree/main/documentacao)
 * [Licença](#licença)
 
 <hr>
