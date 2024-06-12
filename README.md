@@ -59,7 +59,7 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 
 | Detalhes do produto   |    Carrinho                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| ![Detalhes Produto](img/detalhe%20produto.png)       | ![Carrinho](#)               |
+| ![Detalhes Produto](img/detalhe%20produto.png)       | ![Carrinho](img/tela%20sacola.png)               |
 
 ---
 
