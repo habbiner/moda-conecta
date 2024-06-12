@@ -53,7 +53,7 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 
 | Tela de produtos       |  
 |------------------------|  
-| ![Tela de produtos](#) |
+| ![Tela de produtos](img/tela%20produto.png) |
 
 ---
 
