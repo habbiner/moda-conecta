@@ -1,3 +1,4 @@
+
 const accessKey = 'beQ9UQM9cmUCj6MZhVIfd4iiPvnHSEfR9MPQeyLhGUE';
 let currentPage = 1;
 let totalPages = 0;
@@ -21,10 +22,12 @@ async function fetchImages(page = 1) {
 function renderImages() {
     const productContainer = document.getElementById('product-container');
 
-   
+
     if (productContainer) {
+
         productContainer.innerHTML = '';
 
+        
         currentImages.forEach((result, index) => {
             const productDiv = document.createElement('div');
             productDiv.className = 'produto';
@@ -50,24 +53,31 @@ function renderImages() {
     }
 }
 
+
+
 function generateProductName(description) {
+   
     const cleanDescription = description.replace(/(?:woman|man)\s?in\s/i, '');
+    
+  
         const translationMap = {
             'dress': 'vestido',
             'shirt': 'camisa',
             'pants': 'calça',
             'shoes': 'sapatos',
             'jacket': 'jaqueta',
-            // Adicione mais traduções conforme necessário
+        
         };
     const translatedDescription = translationMap[cleanDescription.toLowerCase()] || cleanDescription;
 
     return translatedDescription;
 }
 
+
 function generateRandomPrice() {
     return (Math.random() * (1000 - 100) + 10).toFixed(2);
 }
+
 
 function nextPage() {
     if (currentPage < totalPages) {
@@ -76,11 +86,13 @@ function nextPage() {
     }
 }
 
+
 function previousPage() {
     if (currentPage > 1) {
         currentPage--;
         fetchImages(currentPage);
     }
 }
+
 
 fetchImages();
