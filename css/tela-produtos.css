@@ -1,17 +1,29 @@
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; 
+    padding: 20px;
 }
 
 .produto {
     width: 200px;
     margin: 10px;
     text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px; 
+    transition: transform 0.3s; 
+}
+
+.produto:hover {
+    transform: translateY(-5px); 
 }
 
 .produto img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 .produto h2 {
@@ -21,4 +33,76 @@
 
 .produto p {
     font-weight: bold;
+    color: #555;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.icon-nav-bar {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.div-icons-nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.div-footer {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.footer-do-footer {
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.h-footer-listas, .p1-footer-do-footer, .p-footer-do-footer {
+    margin: 5px 0;
+}
+
+.a-footer-listas {
+    text-decoration: none;
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
 }
