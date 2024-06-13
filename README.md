@@ -20,7 +20,7 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 
 # 🎥 Apresentação do Projeto
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/c3wGTogylXo" frameborder="0" allowfullscreen></iframe>
+[![Nome do Vídeo](https://img.youtube.com/vi/c3wGTogylXo/0.jpg)](https://www.youtube.com/watch?v=c3wGTogylXo)
 
 # 🖥️ Funcionalidades
 
