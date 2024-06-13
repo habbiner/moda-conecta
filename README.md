@@ -189,45 +189,10 @@ A seguir, apresentamos a modelagem do banco de dados, incluindo o diagrama, tabe
 
 ## Exemplos de CRUD
 
-### Cadastro produto (Create)
+### Cadastro produto
 
 ```javascript
-app.post('/cadastro-produto', (req, res) => {
-    const { nome_peca, valor_peca, categoria_peca, descricao_peca, codigo_peca, qtd_estoque, id_tamanho_peca, img_peca, id_color_peca } = req.body;
-    const query = `
-        INSERT INTO CadastroProduto (nome_peca, valor_peca, categoria_peca, descricao_peca, codigo_peca, qtd_estoque, id_tamanho_peca, img_peca, id_color_peca)
-        VALUES ('${nome_peca}', ${valor_peca}, '${categoria_peca}', '${descricao_peca}', '${codigo_peca}', ${qtd_estoque}, ${id_tamanho_peca}, '${img_peca}', ${id_color_peca})
-    `;
-    executeStatement(query)
-        .then(() => {
-            res.status(200).send('Produto cadastrado com sucesso.');
-        })
-        .catch(err => {
-            console.error('Erro ao cadastrar produto:', err);
-            res.status(500).send('Erro ao cadastrar produto.');
-        });
-});
-```
-
-### Consulta produto (Read)
-
-```javascript
-app.get('/produto/:id', async (req, res) => {
-    const { id } = req.params;
-    try {
-        const results = await executeStatement(`SELECT * FROM CadastroProduto WHERE id_peca = ${id}`);
-        if (results.length > 0) {
-            res.status(200).json(results[0]);
-        } else {
-            res.status(404).send('Produto não encontrado.');
-        }
-    } catch (err) {
-        console.error('Erro ao buscar produto:', err);
-        res.status(500).send('Erro ao buscar produto.');
-    }
-});
-
-app.get('/produto', async (req, res) => {
+app.get('/cadastro-produto', async (req, res) => {
     try {
         const results = await executeStatement('SELECT * FROM CadastroProduto');
         console.log(`Resultados da consulta na tabela CadastroProduto:`);
@@ -240,42 +205,57 @@ app.get('/produto', async (req, res) => {
 });
 ```
 
-### Atualização produto (Update)
+### Consulta pedidos
 
 ```javascript
-app.put('/produto/:id', (req, res) => {
-    const { nome_peca, valor_peca, categoria_peca, descricao_peca, codigo_peca, qtd_estoque, id_tamanho_peca, img_peca, id_color_peca } = req.body;
-    const { id } = req.params;
-    const query = `
-        UPDATE CadastroProduto
-        SET nome_peca = '${nome_peca}', valor_peca = ${valor_peca}, categoria_peca = '${categoria_peca}', descricao_peca = '${descricao_peca}', codigo_peca = '${codigo_peca}', qtd_estoque = ${qtd_estoque}, id_tamanho_peca = ${id_tamanho_peca}, img_peca = '${img_peca}', id_color_peca = ${id_color_peca}
-        WHERE id_peca = ${id}
-    `;
+app.get('/pedidos', async (req, res) => {
+    try {
+        const results = await executeStatement('SELECT * FROM Pedidos');
+        console.log(`Resultados da consulta na tabela Pedidos:`);
+        console.log(results);
+        res.status(200).json(results);
+    } catch (err) {
+        console.error('Erro ao executar a consulta:', err);
+        res.status(500).send('Erro ao executar a consulta');
+    }
+});
+```
+
+### Criar usuário
+
+```javascript
+app.post('/login', (req, res) => {
+    const { email, senha } = req.body;
+    const query = `INSERT INTO Login (email, senha) VALUES ('${email}', '${senha}')`;
     executeStatement(query)
         .then(() => {
-            res.status(200).send(`Dados do produto com ID ${id} atualizados com sucesso.`);
+            res.status(200).send('Dados inseridos com sucesso na tabela Login.');
         })
         .catch(err => {
-            console.error('Erro ao atualizar dados do produto:', err);
-            res.status(500).send('Erro ao atualizar dados do produto.');
+            console.error('Erro ao inserir na tabela Login:', err);
+            res.status(500).send('Erro ao inserir na tabela Login.');
         });
 });
 ```
 
-### Delete produto (Delete)
+### Validar login
 
 ```javascript
-app.delete('/produto/:id', (req, res) => {
-    const { id } = req.params;
-    const query = `DELETE FROM CadastroProduto WHERE id_peca = ${id}`;
-    executeStatement(query)
-        .then(() => {
-            res.status(200).send(`Produto com ID ${id} excluído com sucesso.`);
-        })
-        .catch(err => {
-            console.error('Erro ao excluir produto:', err);
-            res.status(500).send('Erro ao excluir produto.');
-        });
+app.post('/validar-login', async (req, res) => {
+    const { email, senha } = req.body;
+    const query = `SELECT * FROM Login WHERE email = '${email}' AND senha = '${senha}'`;
+
+    try {
+        const results = await executeStatement(query);
+        if (results.length > 0) {
+            res.status(200).send('Login bem-sucedido!');
+        } else {
+            res.status(401).send('Credenciais inválidas!');
+        }
+    } catch (err) {
+        console.error('Erro ao executar a consulta:', err);
+        res.status(500).send('Erro ao executar a consulta');
+    }
 });
 ```
 <hr>

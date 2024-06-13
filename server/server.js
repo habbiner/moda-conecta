@@ -132,10 +132,8 @@ app.post('/validar-login', async (req, res) => {
     try {
         const results = await executeStatement(query);
         if (results.length > 0) {
-            // Credenciais válidas, responder com sucesso
             res.status(200).send('Login bem-sucedido!');
         } else {
-            // Credenciais inválidas, responder com erro
             res.status(401).send('Credenciais inválidas!');
         }
     } catch (err) {
