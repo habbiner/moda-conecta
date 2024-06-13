@@ -5,6 +5,7 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 <hr>
 
 # Índice 
+* [Vídeo de Apresentação do Projeto](https://www.youtube.com/watch?v=c3wGTogylXo)
 * [Funcionalidades](#%EF%B8%8F-funcionalidades)
 * [Tecnologias Utilizadas](#%EF%B8%8F-tecnologias-utilizadas)
 * [Interface](#-interface)
@@ -16,6 +17,10 @@ Bem-vindo ao site Moda Conecta! Este projeto é uma aplicação web desenvolvida
 * [Licença](#licença)
 
 <hr>
+
+# 🎥 Apresentação do Projeto
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c3wGTogylXo" frameborder="0" allowfullscreen></iframe>
 
 # 🖥️ Funcionalidades
 

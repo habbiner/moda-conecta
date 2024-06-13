@@ -24,6 +24,7 @@ body {
     /*Div referente ao Miolo da barra que cobre os <a>*/
     height: 2vw;
     width: 63.6vw;
+    text-decoration: none;
 }
 
 .a-nav-bar-titulo {
